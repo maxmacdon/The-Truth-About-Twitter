@@ -2,8 +2,9 @@ from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
 
 from .forms import HandleForm
-from twython import Twython
 import json
+import tweepy
+
 
 def index(request):
     if request.method == 'POST':
@@ -21,6 +22,4 @@ def success(request):
     with open("twitter_credentials.json", "r") as file:
         creds = json.load(file)
 
-    # Instantiate an object
-    python_tweets = Twython(creds['CONSUMER_KEY'], creds['ACCESS_TOKEN'])
     return HttpResponse("You entered a handle correctly")
