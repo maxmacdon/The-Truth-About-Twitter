@@ -5,10 +5,11 @@
     <title>The Truth About Twitter</title>
 </head>
 <body>
-<form action="" method="post">
+<form method="post">
     {% csrf_token %}
     {{ form }}
     <input type="submit" value="Submit">
 </form>
+<p>{{username}}</p>
 </body>
 </html>
