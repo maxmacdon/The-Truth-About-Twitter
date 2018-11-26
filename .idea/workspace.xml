@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2727b4b3-a721-45cb-bc14-7aa340bd2106" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitterstruth/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/twitterstruth/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/twitterstruth/templates/twitterstruth/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/twitterstruth/templates/twitterstruth/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/twitterstruth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/twitterstruth/views.py" afterDir="false" />
     </list>
@@ -39,30 +38,30 @@
       <usages-collector id="statistics.js.language.service.starts" />
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="2" />
+          <entry key="HTML" value="3" />
           <entry key="JSON" value="2" />
-          <entry key="Python" value="26" />
+          <entry key="Python" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="53" />
-          <entry key="PLAIN_TEXT" value="100" />
-          <entry key="Python" value="332" />
+          <entry key="HTML" value="71" />
+          <entry key="PLAIN_TEXT" value="122" />
+          <entry key="Python" value="491" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="2" />
+          <entry key="html" value="3" />
           <entry key="json" value="2" />
-          <entry key="py" value="26" />
+          <entry key="py" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="53" />
-          <entry key="py" value="332" />
-          <entry key="txt" value="100" />
+          <entry key="html" value="71" />
+          <entry key="py" value="491" />
+          <entry key="txt" value="122" />
         </counts>
       </usages-collector>
     </session>
@@ -72,8 +71,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/twitterstruth/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+            <state relative-caret-position="187">
+              <caret line="17" column="39" lean-forward="true" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -82,19 +81,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/twitterstruth/forms.py">
+        <entry file="file://$PROJECT_DIR$/twitterstruth/templates/twitterstruth/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+            <state relative-caret-position="204">
+              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/twitterstruth/templates/twitterstruth/index.html">
+        <entry file="file://$PROJECT_DIR$/twitterstruth/credentials/twitter_credentials.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+              <caret line="7" column="26" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -126,10 +125,11 @@
         <option value="$PROJECT_DIR$/twitter_and_truth/apps.py" />
         <option value="$PROJECT_DIR$/twitterstruth/apps.py" />
         <option value="$PROJECT_DIR$/The_Truth_about_Twitter/settings.py" />
+        <option value="$PROJECT_DIR$/twitterstruth/forms.py" />
         <option value="$PROJECT_DIR$/twitterstruth/urls.py" />
+        <option value="$PROJECT_DIR$/venv/Lib/site-packages/tweepy/streaming.py" />
         <option value="$PROJECT_DIR$/twitterstruth/credentials/twitter_credentials.py" />
         <option value="$PROJECT_DIR$/twitterstruth/templates/twitterstruth/index.html" />
-        <option value="$PROJECT_DIR$/twitterstruth/forms.py" />
         <option value="$PROJECT_DIR$/twitterstruth/views.py" />
       </list>
     </option>
@@ -169,7 +169,18 @@
             <path>
               <item name="The_Truth_about_Twitter" type="b2602c69:ProjectViewProjectNode" />
               <item name="The_Truth_about_Twitter" type="462c0819:PsiDirectoryNode" />
+              <item name="The_Truth_about_Twitter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The_Truth_about_Twitter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The_Truth_about_Twitter" type="462c0819:PsiDirectoryNode" />
               <item name="twitterstruth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The_Truth_about_Twitter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The_Truth_about_Twitter" type="462c0819:PsiDirectoryNode" />
+              <item name="twitterstruth" type="462c0819:PsiDirectoryNode" />
+              <item name="credentials" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="The_Truth_about_Twitter" type="b2602c69:ProjectViewProjectNode" />
@@ -341,12 +352,18 @@
       <option name="project" value="LOCAL" />
       <updated>1542648883775</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Form output to screen">
+      <created>1543240692432</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1543240692432</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2655068" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -406,7 +423,8 @@
     <MESSAGE value="1600 words added to report" />
     <MESSAGE value="Report at 3100 words" />
     <MESSAGE value="Report at 4000 words and Gantt Chart revised" />
-    <option name="LAST_COMMIT_MESSAGE" value="Report at 4000 words and Gantt Chart revised" />
+    <MESSAGE value="Form output to screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Form output to screen" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/twitterstruth/__init__.py">
@@ -428,31 +446,10 @@
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/The_Truth_about_Twitter/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="57" column="80" selection-start-line="57" selection-start-column="80" selection-end-line="57" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/The_Truth_about_Twitter/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twitterstruth/credentials/twitter_credentials.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twitterstruth/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -461,29 +458,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/twitterstruth/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twitterstruth/templates/twitterstruth/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        <state>
+          <caret column="11" lean-forward="true" selection-start-column="11" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/tweepy/streaming.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="357" column="21" selection-start-line="357" selection-start-column="21" selection-end-line="357" selection-end-column="21" />
+        <state relative-caret-position="1630">
+          <caret line="465" column="26" selection-start-line="465" selection-start-column="26" selection-end-line="465" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twitterstruth/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/The_Truth_about_Twitter/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="57" column="56" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twitterstruth/credentials/twitter_credentials.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twitterstruth/templates/twitterstruth/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/twitterstruth/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        <state relative-caret-position="187">
+          <caret line="17" column="39" lean-forward="true" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>

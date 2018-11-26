@@ -10,6 +10,8 @@
     {{ form }}
     <input type="submit" value="Submit">
 </form>
-<p>{{username}}</p>
+{% for tweet in tweets %}
+<p>{{tweet.text}}</p>
+{% endfor %}
 </body>
 </html>
