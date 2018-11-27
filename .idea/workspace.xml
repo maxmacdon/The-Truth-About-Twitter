@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2727b4b3-a721-45cb-bc14-7aa340bd2106" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitterstruth/templates/twitterstruth/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/twitterstruth/templates/twitterstruth/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitterstruth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/twitterstruth/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="2727b4b3-a721-45cb-bc14-7aa340bd2106" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +19,7 @@
     <session id="1277990939">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.115" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.164" value="1" />
@@ -45,8 +41,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="71" />
-          <entry key="PLAIN_TEXT" value="122" />
+          <entry key="HTML" value="77" />
+          <entry key="PLAIN_TEXT" value="207" />
           <entry key="Python" value="491" />
         </counts>
       </usages-collector>
@@ -59,20 +55,20 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="71" />
+          <entry key="html" value="77" />
           <entry key="py" value="491" />
-          <entry key="txt" value="122" />
+          <entry key="txt" value="207" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/twitterstruth/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="17" column="39" lean-forward="true" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+            <state relative-caret-position="221">
+              <caret line="19" column="87" lean-forward="true" selection-start-line="19" selection-start-column="87" selection-end-line="19" selection-end-column="87" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -80,11 +76,20 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/The_Truth_about_Twitter/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="117">
+              <caret line="57" column="56" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/twitterstruth/templates/twitterstruth/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+            <state relative-caret-position="221">
+              <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -129,8 +134,8 @@
         <option value="$PROJECT_DIR$/twitterstruth/urls.py" />
         <option value="$PROJECT_DIR$/venv/Lib/site-packages/tweepy/streaming.py" />
         <option value="$PROJECT_DIR$/twitterstruth/credentials/twitter_credentials.py" />
-        <option value="$PROJECT_DIR$/twitterstruth/templates/twitterstruth/index.html" />
         <option value="$PROJECT_DIR$/twitterstruth/views.py" />
+        <option value="$PROJECT_DIR$/twitterstruth/templates/twitterstruth/index.html" />
       </list>
     </option>
   </component>
@@ -140,9 +145,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-3" />
     <option name="width" value="1346" />
     <option name="height" value="728" />
   </component>
@@ -359,18 +364,25 @@
       <option name="project" value="LOCAL" />
       <updated>1543240692432</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Hitting Twitter API and returning specified users last 20 tweets">
+      <created>1543245256408</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1543245256408</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-8" y="-3" width="1346" height="728" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2655068" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27293935" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30153847" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32996634" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -424,7 +436,8 @@
     <MESSAGE value="Report at 3100 words" />
     <MESSAGE value="Report at 4000 words and Gantt Chart revised" />
     <MESSAGE value="Form output to screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Form output to screen" />
+    <MESSAGE value="Hitting Twitter API and returning specified users last 20 tweets" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hitting Twitter API and returning specified users last 20 tweets" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/twitterstruth/__init__.py">
@@ -493,15 +506,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/twitterstruth/templates/twitterstruth/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        <state relative-caret-position="221">
+          <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/twitterstruth/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" column="39" lean-forward="true" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+        <state relative-caret-position="221">
+          <caret line="19" column="87" lean-forward="true" selection-start-line="19" selection-start-column="87" selection-end-line="19" selection-end-column="87" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
