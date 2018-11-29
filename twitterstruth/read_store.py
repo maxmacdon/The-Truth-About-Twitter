@@ -1,10 +1,19 @@
 import pandas as pd
 import os
+import django
 
 
-def read_in(directory, ac_type):
-    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    users_file = os.path.join(BASE_DIR, 'data\\' + directory + '\\users.csv')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'The_Truth_about_Twitter.settings')
+django.setup()
+
+
+from twitterstruth.models import Account
+from django.conf import settings
+
+
+def read_in_csv(directory, account_type):
+    BASE_DIR = getattr(settings, "BASE_DIR")
+    users_file = os.path.join(BASE_DIR, 'data/' + directory + '/users.csv')
     # tweets_file = os.path.join(BASE_DIR, 'data\\genuine_accounts\\tweets.csv')
 
     users = pd.read_csv(users_file)
@@ -12,10 +21,14 @@ def read_in(directory, ac_type):
 
     # tweets = pd.read_csv(tweets_file)
 
-    account_type = ac_type
-    #Data Preperation
+    # Data Preperation
+    if account_type == 1:
+        real_account = True
+    else:
+        real_account = False
+
     for row in users.itertuples():
-        id = getattr(row, 'id')
+        account_id = getattr(row, 'id')
         friends = getattr(row, 'friends_count')
         if not getattr(row, 'name'):
             no_name = 1
@@ -51,15 +64,24 @@ def read_in(directory, ac_type):
         else:
             three_friends_one_follower = 0
 
-        print(id, account_type, default_prof_pic, no_name, no_desc, lt_30_friends, gt_1000_friends,
-              no_geo_location, three_friends_one_follower, never_tweeted)
+        Account.objects.create(id=account_id, real_account=real_account, account_type=account_type,
+                               default_profile_pic=default_prof_pic, no_name=no_name, no_desc=no_desc,
+                               lt_30_friends=lt_30_friends, gt_1000_friends=gt_1000_friends,
+                               not_geo_located=no_geo_location, never_tweeted=never_tweeted,
+                               three_friends_one_followers=three_friends_one_follower)
 
-read_in('genuine_accounts', 1)
-read_in('fake_followers', 2)
-read_in('social_spambots_1', 3)
-read_in('social_spambots_2', 3)
-read_in('social_spambots_3', 3)
-read_in('traditional_spambots_1', 4)
-read_in('traditional_spambots_2', 4)
-read_in('traditional_spambots_3', 4)
-read_in('traditional_spambots_4', 4)
+
+def read_in_all_data():
+    Account.objects.all().delete()
+    read_in_csv('genuine_accounts', 1)
+    read_in_csv('fake_followers', 2)
+    read_in_csv('social_spambots_1', 3)
+    read_in_csv('social_spambots_2', 3)
+    read_in_csv('social_spambots_3', 3)
+    read_in_csv('traditional_spambots_1', 4)
+    read_in_csv('traditional_spambots_2', 4)
+    read_in_csv('traditional_spambots_3', 4)
+    read_in_csv('traditional_spambots_4', 4)
+
+    
+read_in_all_data()

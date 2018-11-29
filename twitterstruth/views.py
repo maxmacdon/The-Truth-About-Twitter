@@ -1,9 +1,9 @@
-from django.shortcuts import render
-from django.conf import settings
-from .forms import HandleForm
 import json
 import tweepy
 import os
+from django.shortcuts import render
+from django.conf import settings
+from .forms import HandleForm
 
 
 def index(request):
