@@ -3,13 +3,15 @@ import tweepy
 import os
 from django.shortcuts import render
 from django.conf import settings
-from .forms import HandleForm
+from .forms import UsernameForm
 
 
 def index(request):
     tweets = None
+    tweets_header = ''
+
     if request.method == 'POST':
-        form = HandleForm(request.POST)
+        form = UsernameForm(request.POST)
         if form.is_valid():
             username = form.cleaned_data['username']
 
@@ -22,9 +24,10 @@ def index(request):
 
             api = tweepy.API(auth)
             tweets = api.user_timeline(username)
+            tweets_header = 'These are the 20 most recent tweets from ' + username
     else:
-        form = HandleForm()
+        form = UsernameForm()
 
-    return render(request, 'index.html', {'form': form, 'tweets': tweets})
+    return render(request, 'index.html', {'form': form, 'tweets': tweets, 'tweets_header': tweets_header})
 
 
