@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2727b4b3-a721-45cb-bc14-7aa340bd2106" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/MaxMacDonald_Interim_Report.docx" beforeDir="false" afterPath="$PROJECT_DIR$/documents/MaxMacDonald_Interim_Report.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitterstruth/machine_learning.py" beforeDir="false" afterPath="$PROJECT_DIR$/twitterstruth/machine_learning.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitterstruth/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/twitterstruth/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitterstruth/read_store.py" beforeDir="false" afterPath="$PROJECT_DIR$/twitterstruth/read_store.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +23,7 @@
     <session id="1277990939">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.115" value="1" />
           <entry key="project.open.time.126" value="1" />
           <entry key="project.open.time.13" value="1" />
@@ -61,7 +57,7 @@
           <entry key="CSS" value="129" />
           <entry key="CommandLine" value="27" />
           <entry key="HTML" value="247" />
-          <entry key="PLAIN_TEXT" value="646" />
+          <entry key="PLAIN_TEXT" value="676" />
           <entry key="Python" value="4714" />
         </counts>
       </usages-collector>
@@ -111,7 +107,7 @@
         <entry file="file://$PROJECT_DIR$/twitterstruth/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+              <caret line="21" column="49" lean-forward="true" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -500,7 +496,14 @@
       <option name="project" value="LOCAL" />
       <updated>1543775622616</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="First draft of report finished">
+      <created>1543837865269</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1543837865325</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView">
@@ -514,14 +517,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1347" height="775" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49895614" visible="true" weight="0.22999223" />
       <window_info id="Structure" order="1" sideWeight="0.50104386" side_tool="true" weight="0.21772939" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.121684864" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.121684864" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -584,7 +586,8 @@
     <MESSAGE value="Web front end of VP done and added relevent sections to the report" />
     <MESSAGE value="Data read out of database and ready to go into ML model" />
     <MESSAGE value="Naive Bayes classifier added with k-fold cross validation and runs 5 times" />
-    <option name="LAST_COMMIT_MESSAGE" value="Naive Bayes classifier added with k-fold cross validation and runs 5 times" />
+    <MESSAGE value="First draft of report finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="First draft of report finished" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -696,16 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twitterstruth/read_store.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357">
-          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/twitterstruth/machine_learning.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
@@ -716,10 +709,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/twitterstruth/read_store.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-357">
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/twitterstruth/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+          <caret line="21" column="49" lean-forward="true" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
         </state>
       </provider>
     </entry>
