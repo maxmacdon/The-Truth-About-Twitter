@@ -14,3 +14,9 @@ class Account(models.Model):
     not_geo_located = models.IntegerField()
     three_friends_one_followers = models.IntegerField()
     never_tweeted = models.IntegerField()
+
+
+class Tweet(models.Model):
+    id = models.BigIntegerField(primary_key=True)
+    account_id = models.ForeignKey(Account, on_delete=models.CASCADE)
+    tweet_text = models.CharField(max_length=200)

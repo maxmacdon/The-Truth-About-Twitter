@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="2727b4b3-a721-45cb-bc14-7aa340bd2106" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/MaxMacDonald_Interim_Report.docx" beforeDir="false" afterPath="$PROJECT_DIR$/documents/MaxMacDonald_Interim_Report.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/twitterstruth/machine_learning.py" beforeDir="false" afterPath="$PROJECT_DIR$/twitterstruth/machine_learning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitterstruth/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/twitterstruth/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitterstruth/read_store.py" beforeDir="false" afterPath="$PROJECT_DIR$/twitterstruth/read_store.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +18,7 @@
     <SUITE FILE_PATH="coverage/The_Truth_about_Twitter$read_store.coverage" NAME="read_store Coverage Results" MODIFIED="1543509554106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/twitterstruth" />
     <SUITE FILE_PATH="coverage/The_Truth_about_Twitter$twitter_credentials.coverage" NAME="twitter_credentials Coverage Results" MODIFIED="1543240175150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/twitterstruth/credentials" />
     <SUITE FILE_PATH="coverage/The_Truth_about_Twitter$manage.coverage" NAME="manage Coverage Results" MODIFIED="1543414930434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/The_Truth_about_Twitter$machine_learning.coverage" NAME="machine_learning Coverage Results" MODIFIED="1543775552136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/twitterstruth" />
+    <SUITE FILE_PATH="coverage/The_Truth_about_Twitter$machine_learning.coverage" NAME="machine_learning Coverage Results" MODIFIED="1543832624541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/twitterstruth" />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
@@ -24,7 +27,7 @@
     <session id="1277990939">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.115" value="1" />
           <entry key="project.open.time.126" value="1" />
           <entry key="project.open.time.13" value="1" />
@@ -33,13 +36,14 @@
           <entry key="project.open.time.42" value="1" />
           <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.52" value="1" />
+          <entry key="project.open.time.54" value="1" />
           <entry key="project.open.time.56" value="1" />
           <entry key="project.open.time.64" value="1" />
           <entry key="project.open.time.67" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.74" value="1" />
           <entry key="project.open.time.88" value="1" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -49,7 +53,7 @@
           <entry key="CSS" value="2" />
           <entry key="HTML" value="7" />
           <entry key="JSON" value="3" />
-          <entry key="Python" value="57" />
+          <entry key="Python" value="58" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -57,8 +61,8 @@
           <entry key="CSS" value="129" />
           <entry key="CommandLine" value="27" />
           <entry key="HTML" value="247" />
-          <entry key="PLAIN_TEXT" value="556" />
-          <entry key="Python" value="4606" />
+          <entry key="PLAIN_TEXT" value="646" />
+          <entry key="Python" value="4714" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -79,11 +83,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/twitterstruth/machine_learning.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="41" column="50" lean-forward="true" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
+            <state relative-caret-position="56">
+              <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -94,17 +98,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/twitterstruth/read_store.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-818">
-              <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+            <state relative-caret-position="-357">
+              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/twitterstruth/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="16" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="16" />
+            <state relative-caret-position="357">
+              <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -138,17 +145,17 @@
         <option value="$PROJECT_DIR$/twitterstruth/apps.py" />
         <option value="$PROJECT_DIR$/venv/Lib/site-packages/tweepy/streaming.py" />
         <option value="$PROJECT_DIR$/twitterstruth/credentials/twitter_credentials.py" />
-        <option value="$PROJECT_DIR$/twitterstruth/models.py" />
         <option value="$PROJECT_DIR$/twitterstruth/templates/twitterstruth/twitterstruth.css" />
         <option value="$PROJECT_DIR$/twitterstruth/templates/twitterstruth/web_style.css" />
         <option value="$PROJECT_DIR$/twitterstruth/urls.py" />
-        <option value="$PROJECT_DIR$/twitterstruth/read_store.py" />
         <option value="$PROJECT_DIR$/The_Truth_about_Twitter/settings.py" />
         <option value="$PROJECT_DIR$/twitterstruth/templates/twitterstruth/index.html" />
         <option value="$PROJECT_DIR$/twitterstruth/staticfiles/css/web_style.css" />
         <option value="$PROJECT_DIR$/twitterstruth/forms.py" />
         <option value="$PROJECT_DIR$/twitterstruth/views.py" />
+        <option value="$PROJECT_DIR$/twitterstruth/read_store.py" />
         <option value="$PROJECT_DIR$/twitterstruth/machine_learning.py" />
+        <option value="$PROJECT_DIR$/twitterstruth/models.py" />
       </list>
     </option>
   </component>
@@ -160,7 +167,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="width" value="1346" />
+    <option name="width" value="1347" />
     <option name="height" value="775" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -171,7 +178,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -210,6 +216,13 @@
               <item name="The_Truth_about_Twitter" type="b2602c69:ProjectViewProjectNode" />
               <item name="The_Truth_about_Twitter" type="462c0819:PsiDirectoryNode" />
               <item name="twitterstruth" type="462c0819:PsiDirectoryNode" />
+              <item name="staticfiles" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The_Truth_about_Twitter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The_Truth_about_Twitter" type="462c0819:PsiDirectoryNode" />
+              <item name="twitterstruth" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -223,6 +236,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -479,7 +493,14 @@
       <option name="project" value="LOCAL" />
       <updated>1543770484797</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Naive Bayes classifier added with k-fold cross validation and runs 5 times">
+      <created>1543775622616</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1543775622616</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView">
@@ -492,15 +513,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1346" height="775" extended-state="0" />
+    <frame x="-8" y="0" width="1347" height="775" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49895614" visible="true" weight="0.22706065" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49895614" visible="true" weight="0.22999223" />
       <window_info id="Structure" order="1" sideWeight="0.50104386" side_tool="true" weight="0.21772939" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29485178" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.121684864" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -562,7 +583,18 @@
     <MESSAGE value="Model migrated to database and data inserted from csv files" />
     <MESSAGE value="Web front end of VP done and added relevent sections to the report" />
     <MESSAGE value="Data read out of database and ready to go into ML model" />
-    <option name="LAST_COMMIT_MESSAGE" value="Data read out of database and ready to go into ML model" />
+    <MESSAGE value="Naive Bayes classifier added with k-fold cross validation and runs 5 times" />
+    <option name="LAST_COMMIT_MESSAGE" value="Naive Bayes classifier added with k-fold cross validation and runs 5 times" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/twitterstruth/read_store.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/twitterstruth/__init__.py">
@@ -622,13 +654,6 @@
     <entry file="file://$PROJECT_DIR$/twitterstruth/credentials/twitter_credentials.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/twitterstruth/credentials/twitter_credentials.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/twitterstruth/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -664,27 +689,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twitterstruth/read_store.py">
+    <entry file="file://$PROJECT_DIR$/twitterstruth/credentials/twitter_credentials.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-818">
-          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        <state relative-caret-position="187">
+          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twitterstruth/models.py">
+    <entry file="file://$PROJECT_DIR$/twitterstruth/read_store.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="16" />
+        <state relative-caret-position="-357">
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/twitterstruth/machine_learning.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="41" column="50" lean-forward="true" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
+        <state relative-caret-position="56">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twitterstruth/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
         </state>
       </provider>
     </entry>

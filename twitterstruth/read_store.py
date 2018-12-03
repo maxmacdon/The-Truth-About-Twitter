@@ -14,12 +14,13 @@ from django.conf import settings
 def read_in_csv(directory, account_type):
     BASE_DIR = getattr(settings, "BASE_DIR")
     users_file = os.path.join(BASE_DIR, 'data/' + directory + '/users.csv')
-    # tweets_file = os.path.join(BASE_DIR, 'data\\genuine_accounts\\tweets.csv')
+    # tweets_file = os.path.join(BASE_DIR, 'data/' + directory + 'tweets.csv')
 
     users = pd.read_csv(users_file)
     users = users.fillna('')
 
     # tweets = pd.read_csv(tweets_file)
+    # tweets = tweets.fillna('')
 
     # Data Preperation
     if account_type == 1:
