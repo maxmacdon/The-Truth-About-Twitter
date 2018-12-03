@@ -1,6 +1,6 @@
 import json
 
-# Enter your keys/secrets as strings in the following fields
+
 credentials = {}
 credentials['CONSUMER_KEY'] = 'iv1i1qYNCuNhNLgm2EX6Zrkj8'
 credentials['CONSUMER_SECRET'] = 'X9MWGxSVgJu6ExO5dgEMikJoHDrPmrC6uDNmOVorZmVJFHsRU7'

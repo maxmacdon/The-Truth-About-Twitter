@@ -2,6 +2,8 @@ from django.db import models
 
 
 # Create your models here.
+
+# Account table
 class Account(models.Model):
     id = models.BigIntegerField(primary_key=True)
     real_account = models.BooleanField()
@@ -16,6 +18,7 @@ class Account(models.Model):
     never_tweeted = models.IntegerField()
 
 
+# Tweet table
 class Tweet(models.Model):
     id = models.BigIntegerField(primary_key=True)
     account_id = models.ForeignKey(Account, on_delete=models.CASCADE)

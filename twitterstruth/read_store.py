@@ -2,7 +2,7 @@ import pandas as pd
 import os
 import django
 
-
+# Ensure file when run separately can access models and settings
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'The_Truth_about_Twitter.settings')
 django.setup()
 
@@ -12,6 +12,7 @@ from django.conf import settings
 
 
 def read_in_csv(directory, account_type):
+    # Read in users and tweets CSV files
     BASE_DIR = getattr(settings, "BASE_DIR")
     users_file = os.path.join(BASE_DIR, 'data/' + directory + '/users.csv')
     # tweets_file = os.path.join(BASE_DIR, 'data/' + directory + 'tweets.csv')
@@ -28,6 +29,7 @@ def read_in_csv(directory, account_type):
     else:
         real_account = False
 
+    # Perform data transformation
     for row in users.itertuples():
         account_id = getattr(row, 'id')
         friends = getattr(row, 'friends_count')
@@ -65,6 +67,7 @@ def read_in_csv(directory, account_type):
         else:
             three_friends_one_follower = 0
 
+        # Enter data into database
         Account.objects.create(id=account_id, real_account=real_account, account_type=account_type,
                                default_profile_pic=default_prof_pic, no_name=no_name, no_desc=no_desc,
                                lt_30_friends=lt_30_friends, gt_1000_friends=gt_1000_friends,

@@ -6,15 +6,18 @@ from sklearn.model_selection import KFold, cross_val_score
 from sklearn.naive_bayes import BernoulliNB
 
 
+# Ensure file when run separately can access models and settings
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'The_Truth_about_Twitter.settings')
 django.setup()
 from twitterstruth.models import Account
 
 
 def get_accounts(dum_features, dum_targets, account_type, sample_size):
+    # Get accounts of specified type and then get random sub-sample from it
     accounts = Account.objects.filter(account_type=account_type)
     random_accounts = random.sample(list(accounts), sample_size)
 
+    # Get database objects into list formats
     for acc in random_accounts:
         dum_features.append([acc.default_profile_pic, acc.gt_1000_friends,
                              acc.lt_30_friends, acc.never_tweeted,
@@ -35,11 +38,13 @@ targets = []
 features, targets = get_accounts(features, targets, 1, 1000)
 features, targets = get_accounts(features, targets, 4, 1000)
 
+# Convert lists to NumPy arrays
 features = np.asarray(features)
 targets = np.asarray(targets)
 
-kf = KFold(n_splits=10, shuffle=True)
+# Initialise classifier and k-fold cross validation
 clf = BernoulliNB()
+kf = KFold(n_splits=10, shuffle=True)
 
 print('Data comprises of 2000 shuffled accounts:\n'
       '    1000 random Genuine accounts\n'
@@ -47,6 +52,8 @@ print('Data comprises of 2000 shuffled accounts:\n'
       'K-fold Cross validation used with k = 10\n'
       'Classifier: Naive Bayes with Bernoulli distribution\n'
       'Mean of the partition scores for each run:\n')
+
+# Train and test model using k-fold cross validation 5 times and output mean scores
 for index in range(5):
     scores = cross_val_score(estimator=clf, X=features, y=targets, cv=kf)
     print('    Run ' + str(index) + ': ' + str(np.mean(scores)))
