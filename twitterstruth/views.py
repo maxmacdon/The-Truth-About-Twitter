@@ -28,6 +28,8 @@ def index(request):
             # Retrieve 20 most recent tweets from Twitter API of account:username
             api = tweepy.API(auth)
             tweets = api.user_timeline(username)
+            # End code used
+
             tweets_header = 'These are the 20 most recent tweets from ' + username
     else:
         form = UsernameForm()
