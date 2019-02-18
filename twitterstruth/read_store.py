@@ -11,68 +11,96 @@ from twitterstruth.models import Account
 from django.conf import settings
 
 
+def levenshtein(s1, s2):
+    if len(s1) < len(s2):
+        return levenshtein(s2, s1)
+
+    # len(s1) >= len(s2)
+    if len(s2) == 0:
+        return len(s1)
+
+    previous_row = range(len(s2) + 1)
+    for i, c1 in enumerate(s1):
+        current_row = [i + 1]
+        for j, c2 in enumerate(s2):
+            # j+1 instead of j since previous_row and current_row are one character longer than s2
+            insertions = previous_row[j + 1] + 1
+            deletions = current_row[j] + 1
+            substitutions = previous_row[j] + (c1 != c2)
+            current_row.append(min(insertions, deletions, substitutions))
+        previous_row = current_row
+
+    return previous_row[-1]
+
+
 def read_in_csv(directory, account_type):
     # Read in users and tweets CSV files
     BASE_DIR = getattr(settings, "BASE_DIR")
-    users_file = os.path.join(BASE_DIR, 'data/' + directory + '/users.csv')
-    # tweets_file = os.path.join(BASE_DIR, 'data/' + directory + 'tweets.csv')
 
-    users = pd.read_csv(users_file)
-    users = users.fillna('')
+    try:
+        users_file = os.path.join(BASE_DIR, 'data/' + directory + '/users.csv')
+        users = pd.read_csv(users_file)
+        users = users.fillna(-1)
 
-    # tweets = pd.read_csv(tweets_file)
-    # tweets = tweets.fillna('')
+        if account_type == 1:
+            real_account = True
+        else:
+            real_account = False
 
-    # Data Preperation
-    if account_type == 1:
-        real_account = True
-    else:
-        real_account = False
+        # Perform data transformation
+        for user in users.itertuples():
+            # Get levenshtein distance between tweets
+            lev_distance = 0
+            tweets_text = []
+            user_id = getattr(user, 'id')
+            try:
+                count = 0
+                tweets_file = 'data/' + directory + '/tweets.csv'
 
-    # Perform data transformation
-    for row in users.itertuples():
-        account_id = getattr(row, 'id')
-        friends = getattr(row, 'friends_count')
-        if not getattr(row, 'name'):
-            no_name = 1
-        else:
-            no_name = 0
-        if getattr(row, 'default_profile_image') == 1.0:
-            default_prof_pic = 1
-        else:
-            default_prof_pic = 0
-        if getattr(row, 'geo_enabled') != 1.0:
-            no_geo_location = 1
-        else:
-            no_geo_location = 0
-        if not getattr(row, 'description'):
-            no_desc = 1
-        else:
-            no_desc = 0
-        if friends < 30:
-            lt_30_friends = 1
-            gt_1000_friends = 0
-        elif friends > 1000:
-            lt_30_friends = 0
-            gt_1000_friends = 1
-        else:
-            lt_30_friends = 0
-            gt_1000_friends = 0
-        if getattr(row, 'statuses_count') == 0:
-            never_tweeted = 1
-        else:
-            never_tweeted = 0
-        if friends > 3 * getattr(row, 'followers_count'):
-            three_friends_one_follower = 1
-        else:
-            three_friends_one_follower = 0
+                for tweets in pd.read_csv(tweets_file, chunksize=2000000, usecols=['text', 'user_id']):
+                    tweets = tweets.fillna(value={'text': '', 'user_id': -1})
+                    tweets = tweets[tweets['user_id'] == user_id]
+                    if count == 20:
+                        break
+                    else:
+                        for tweet in tweets.itertuples():
+                            if count == 20:
+                                break
+                            else:
+                                tweet_user_id = int(getattr(tweet, 'user_id'))
+                                if user_id == tweet_user_id:
+                                    tweets_text.append(getattr(tweet, 'text'))
+                                    count += 1
+            except FileNotFoundError:
+                return
 
-        # Enter data into database
-        Account.objects.create(id=account_id, real_account=real_account, account_type=account_type,
-                               default_profile_pic=default_prof_pic, no_name=no_name, no_desc=no_desc,
-                               lt_30_friends=lt_30_friends, gt_1000_friends=gt_1000_friends,
-                               not_geo_located=no_geo_location, never_tweeted=never_tweeted,
-                               three_friends_one_followers=three_friends_one_follower)
+            if not tweets_text or len(tweets_text) == 1:
+                lev_distance = 300
+            else:
+                for text1 in tweets_text:
+                    for text2 in tweets_text:
+                        tweet_distance = levenshtein(str(text1), str(text2))
+                        if lev_distance < tweet_distance:
+                            lev_distance = tweet_distance
+
+            # Enter data into database
+            Account.objects.create(id=getattr(user, 'id'), real_account=real_account, account_type=account_type,
+               name=getattr(user, 'name'), screen_name=getattr(user, 'screen_name'),
+               statuses_count=getattr(user, 'statuses_count'), followers_count=getattr(user, 'followers_count'),
+               friends_count=getattr(user, 'friends_count'), favourites_count=getattr(user, 'favourites_count'),
+               listed_count=getattr(user, 'listed_count'), url=getattr(user, 'url'), lang=getattr(user, 'lang'),
+               time_zone=getattr(user, 'time_zone'), default_profile_image=getattr(user, 'default_profile_image'),
+               default_profile=getattr(user, 'default_profile'), location=getattr(user, 'location'),
+               geo_enabled=getattr(user, 'geo_enabled'), profile_image_url=getattr(user, 'profile_image_url'),
+               profile_image_url_https=getattr(user, 'profile_image_url_https'),
+               profile_banner_url=getattr(user, 'profile_banner_url'), description=getattr(user, 'description'),
+               profile_use_background_image=getattr(user, 'profile_use_background_image'),
+               profile_background_image_url=getattr(user, 'profile_background_image_url'),
+               profile_background_image_url_https=getattr(user, 'profile_background_image_url_https'),
+               profile_background_tile=getattr(user, 'profile_background_tile'), utc_offset=getattr(user, 'utc_offset'),
+               protected=getattr(user, 'protected'), verified=getattr(user, 'verified'), lev_distance=lev_distance)
+    except FileNotFoundError:
+        return
 
 
 def read_in_all_data():
@@ -87,5 +115,14 @@ def read_in_all_data():
     read_in_csv('traditional_spambots_3', 4)
     read_in_csv('traditional_spambots_4', 4)
 
-    
-read_in_all_data()
+
+# read_in_all_data()
+
+BASE_DIR = getattr(settings, "BASE_DIR")
+file = os.path.join(BASE_DIR, 'data/final.csv')
+dd = pd.read_csv(file)
+
+for idx, row in dd.iterrows():
+    account = Account.objects.get(id=dd.loc[idx, 'id'])
+    account.lev_distance = dd.loc[idx, 'lev_distance']
+    account.save()

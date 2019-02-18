@@ -17,6 +17,39 @@ def get_accounts(dum_features, dum_targets, account_type, sample_size):
     accounts = Account.objects.filter(account_type=account_type)
     random_accounts = random.sample(list(accounts), sample_size)
 
+    # if not getattr(row, 'name'):
+    #     no_name = 1
+    # else:
+    #     no_name = 0
+    # if getattr(row, 'default_profile_image') == 1.0:
+    #     default_prof_pic = 1
+    # else:
+    #     default_prof_pic = 0
+    # if getattr(row, 'geo_enabled') != 1.0:
+    #     no_geo_location = 1
+    # else:
+    #     no_geo_location = 0
+    # if not getattr(row, 'description'):
+    #     no_desc = 1
+    # else:
+    #     no_desc = 0
+    # if friends < 30:
+    #     lt_30_friends = 1
+    #     gt_1000_friends = 0
+    # elif friends > 1000:
+    #     lt_30_friends = 0
+    #     gt_1000_friends = 1
+    # else:
+    #     lt_30_friends = 0
+    #     gt_1000_friends = 0
+    # if getattr(row, 'statuses_count') == 0:
+    #     never_tweeted = 1
+    # else:
+    #     never_tweeted = 0
+    # if friends > 3 * getattr(row, 'followers_count'):
+    #     three_friends_one_follower = 1
+    # else:
+    #     three_friends_one_follower = 0
     # Get database objects into list formats
     for acc in random_accounts:
         dum_features.append([acc.default_profile_pic, acc.gt_1000_friends,
