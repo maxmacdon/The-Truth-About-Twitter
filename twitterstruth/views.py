@@ -26,10 +26,24 @@ def index(request):
             auth.set_access_token(creds['ACCESS_TOKEN'], creds['ACCESS_SECRET'])
 
             # Retrieve 20 most recent tweets from Twitter API of account:username
-            api = tweepy.API(auth)
+            api = tweepy.API(auth, parser=tweepy.parsers.JSONParser())
             tweets = api.user_timeline(username)
             # End code used
-
+            user = api.get_user(username, include_entities=1)
+            print(user)
+            # print('Screen name: ' + user['screen_name'])
+            # print('Description: ' + user['description'])
+            # print('Geo-located: ' + str(user['geo_enabled']))
+            # print('Followers: ' + str(user['followers_count']))
+            # print('Friends: ' + str(user['friends_count']))
+            # print('Language: ' + user['lang'])
+            # print('Total tweets: ' + str(user['statuses_count']))
+            # print('Protected: ' + str(user['protected']))
+            # print('Verified: ' + str(user['verified']))
+            # print('Profile image: ' + user['profile_image_url'])
+            # print('Default profile image: ' + str(user['default_profile_image']))
+            # for tweet in tweets:
+            #     print(tweet['text'])
             tweets_header = 'These are the 20 most recent tweets from ' + username
     else:
         form = UsernameForm()

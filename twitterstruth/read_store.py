@@ -50,7 +50,7 @@ def read_in_csv(directory, account_type):
         # Perform data transformation
         for user in users.itertuples():
             # Get levenshtein distance between tweets
-            lev_distance = 0
+            lev_distance = 300
             tweets_text = []
             user_id = getattr(user, 'id')
             try:
@@ -60,28 +60,25 @@ def read_in_csv(directory, account_type):
                 for tweets in pd.read_csv(tweets_file, chunksize=2000000, usecols=['text', 'user_id']):
                     tweets = tweets.fillna(value={'text': '', 'user_id': -1})
                     tweets = tweets[tweets['user_id'] == user_id]
-                    if count == 20:
-                        break
-                    else:
-                        for tweet in tweets.itertuples():
-                            if count == 20:
-                                break
-                            else:
-                                tweet_user_id = int(getattr(tweet, 'user_id'))
-                                if user_id == tweet_user_id:
-                                    tweets_text.append(getattr(tweet, 'text'))
-                                    count += 1
-            except FileNotFoundError:
-                return
 
-            if not tweets_text or len(tweets_text) == 1:
-                lev_distance = 300
-            else:
+                    for tweet in tweets.itertuples():
+                        if count == 20:
+                            break
+                        else:
+                            tweet_user_id = int(getattr(tweet, 'user_id'))
+                            if user_id == tweet_user_id:
+                                tweets_text.append(getattr(tweet, 'text'))
+                                count += 1
+            except FileNotFoundError:
+                pass
+
+            if tweets_text and len(tweets_text) != 1:
                 for text1 in tweets_text:
                     for text2 in tweets_text:
-                        tweet_distance = levenshtein(str(text1), str(text2))
-                        if lev_distance < tweet_distance:
-                            lev_distance = tweet_distance
+                        if str(text1) != str(text2):
+                            tweet_distance = levenshtein(str(text1), str(text2))
+                            if tweet_distance < lev_distance:
+                                lev_distance = tweet_distance
 
             # Enter data into database
             Account.objects.create(id=getattr(user, 'id'), real_account=real_account, account_type=account_type,
@@ -116,13 +113,4 @@ def read_in_all_data():
     read_in_csv('traditional_spambots_4', 4)
 
 
-# read_in_all_data()
-
-BASE_DIR = getattr(settings, "BASE_DIR")
-file = os.path.join(BASE_DIR, 'data/final.csv')
-dd = pd.read_csv(file)
-
-for idx, row in dd.iterrows():
-    account = Account.objects.get(id=dd.loc[idx, 'id'])
-    account.lev_distance = dd.loc[idx, 'lev_distance']
-    account.save()
+read_in_all_data()
