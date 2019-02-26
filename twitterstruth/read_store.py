@@ -5,8 +5,6 @@ import django
 # Ensure file when run separately can access models and settings
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'The_Truth_about_Twitter.settings')
 django.setup()
-
-
 from twitterstruth.models import Account
 from django.conf import settings
 
