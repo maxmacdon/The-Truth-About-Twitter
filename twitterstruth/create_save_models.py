@@ -13,7 +13,7 @@ from twitterstruth.models import Account
 from django.db.models import Q
 from django.conf import settings
 
-
+# Convert account details into features and targets
 def create_features(accounts):
     features = []
     targets = []
@@ -129,6 +129,7 @@ def train_models(acc, filename):
             best_hm = harmonic_mean
             final_clf = clf
 
+    # Save classifier to file
     BASE_DIR = getattr(settings, "BASE_DIR")
     filepath = os.path.join(BASE_DIR, filename)
     pickle.dump(final_clf, open(filepath, 'wb'))

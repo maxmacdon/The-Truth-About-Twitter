@@ -17,7 +17,7 @@ from twitterstruth.models import Account
 from django.db.models import Q
 from django.conf import settings
 
-
+# Convert account details into features and targets
 def create_features(accounts, acc):
     features = []
     targets = []
@@ -118,6 +118,7 @@ def train_models(df, type, exp, acc):
     df['type'] = type
     df['exp'] = exp
 
+    # Do resampling if needed and only get required account types
     if acc == 0:
         accounts_1 = Account.objects.all()
         accounts_2 = Account.objects.filter(account_type=1)
@@ -133,7 +134,7 @@ def train_models(df, type, exp, acc):
     features = np.asarray(features)
     targets = np.asarray(targets)
 
-    # Initialise classifiers and k-fold cross validation
+    # Initialise classifiers and stratified and normal k-fold cross validation
     classifiers = [
         DecisionTreeClassifier(),
         RandomForestClassifier(criterion='entropy', n_estimators=100),
@@ -143,12 +144,13 @@ def train_models(df, type, exp, acc):
     kf = KFold(n_splits=10, shuffle=True)
     skf = StratifiedKFold(n_splits=10)
 
-    # Train classifier using K fold cross validation and save the best performing classifier
+    # Train classifier using stratified or normal k-fold cross validation and save the best performing classifier
     for train, test in skf.split(features, targets):# kf.split(features)
         for index in range(4):
             classifiers[index].fit(features[train], targets[train])
             results = classifiers[index].predict(features[test])
 
+            # Get accuracy scores depending if binary or multiclass
             if acc != 1:
                 cm = confusion_matrix(targets[test], results)
                 recall = recall_score(targets[test], results)
@@ -162,6 +164,7 @@ def train_models(df, type, exp, acc):
                 f1 = f1_score(targets[test], results, average='macro', labels=np.unique(results))
                 recall_list = recall_score(targets[test], results, average=None, labels=np.unique(results))
 
+            # Add confusion matrix elements to dataframe
             cm_index = 3
             for row in cm:
                 for col in row:
@@ -172,13 +175,14 @@ def train_models(df, type, exp, acc):
             df.iloc[index, cm_index + 1] += precision
             df.iloc[index, cm_index + 2] += f1
 
+            # Compute average class accuracy(harmonic mean)
             harmonic_mean = 0
             for rec in recall_list:
                 if rec != 0:
                     harmonic_mean += 1 / rec
             harmonic_mean = 1 / ((1 / len(recall_list)) * harmonic_mean)
             df.iloc[index, cm_index + 3] += harmonic_mean
-
+    # Get average over all the folds
     df.recall = df.recall.div(10)
     df.precision = df.precision.div(10)
     df.f1 = df.f1.div(10)
@@ -187,6 +191,7 @@ def train_models(df, type, exp, acc):
     return df
 
 
+# Dataframe for binary classifiers
 d_binary = {'name': ['dt', 'nbb', 'knn', 'svm'],
             'type': ['', '', '', ''],
             'exp': ['', '', '', ''],
@@ -195,7 +200,7 @@ d_binary = {'name': ['dt', 'nbb', 'knn', 'svm'],
             'precision': [0, 0, 0, 0],
             'f1': [0, 0, 0, 0],
             'harmonic_mean': [0, 0, 0, 0]}
-
+# Dataframe for multiclass classifiers
 d_multi = {'name': ['dt', 'nbb', 'knn', 'svm'],
            'type': ['', '', '', ''],
            'exp': ['', '', '', ''],

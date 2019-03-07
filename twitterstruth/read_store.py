@@ -8,7 +8,7 @@ django.setup()
 from twitterstruth.models import Account
 from django.conf import settings
 
-
+# Compute the levenshtein distance between 2 strings
 def levenshtein(s1, s2):
     if len(s1) < len(s2):
         return levenshtein(s2, s1)
@@ -30,11 +30,10 @@ def levenshtein(s1, s2):
 
     return previous_row[-1]
 
-
+# Read in users and tweets CSV files
 def read_in_csv(directory, account_type):
-    # Read in users and tweets CSV files
-    BASE_DIR = getattr(settings, "BASE_DIR")
 
+    BASE_DIR = getattr(settings, "BASE_DIR")
     try:
         users_file = os.path.join(BASE_DIR, 'data/' + directory + '/users.csv')
         users = pd.read_csv(users_file)
@@ -70,6 +69,7 @@ def read_in_csv(directory, account_type):
             except FileNotFoundError:
                 pass
 
+            # Only if there is more then one entry in tweets_text proceed
             if tweets_text and len(tweets_text) != 1:
                 for text1 in tweets_text:
                     for text2 in tweets_text:
