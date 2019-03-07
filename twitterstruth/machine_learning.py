@@ -3,7 +3,8 @@ import django
 import numpy as np
 import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
-from sklearn.model_selection import KFold
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import KFold, StratifiedKFold
 from sklearn.naive_bayes import BernoulliNB
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import LinearSVC
@@ -17,21 +18,14 @@ from django.db.models import Q
 from django.conf import settings
 
 
-def train_models(df, type, exp, acc):
+def create_features(accounts, acc):
     features = []
     targets = []
-
-    df['type'] = type
-    df['exp'] = exp
-
-    if acc == 0 or acc == 1:
-        accounts = Account.objects.all()
-    else:
-        accounts = Account.objects.filter(Q(account_type=1) | Q(account_type=acc))
 
     for account in accounts:
         instance = []
 
+        # Exp 1 Min features
         if not account.name:
             instance.append(1)
         else:
@@ -71,7 +65,6 @@ def train_models(df, type, exp, acc):
             instance.append(1)
         else:
             instance.append(0)
-        features.append(instance)
 
         if acc == 1:
             targets.append(account.account_type)
@@ -81,6 +74,61 @@ def train_models(df, type, exp, acc):
             else:
                 targets.append(1)
 
+        # Exp 2 Maximum features
+        if account.statuses_count < 50:
+            instance.append(1)
+        else:
+            instance.append(0)
+
+        if account.lev_distance < 30:
+            instance.append(1)
+        else:
+            instance.append(0)
+
+        if account.lang != 'en':
+            instance.append(1)
+        else:
+            instance.append(0)
+
+        if account.friends_count > 50 * account.followers_count:
+            instance.append(1)
+        else:
+            instance.append(0)
+
+        if account.friends_count > 100 * account.followers_count:
+            instance.append(1)
+        else:
+            instance.append(0)
+
+        if 'www' in account.description or 'http' in account.description:
+            instance.append(1)
+        else:
+            instance.append(0)
+
+        if account.default_profile_image == 1:
+            instance.append(1)
+        else:
+            instance.append(0)
+        features.append(instance)
+
+    return features, targets
+
+
+def train_models(df, type, exp, acc):
+    df['type'] = type
+    df['exp'] = exp
+
+    if acc == 0:
+        accounts_1 = Account.objects.all()
+        accounts_2 = Account.objects.filter(account_type=1)
+        accounts = accounts_1 | accounts_2
+    elif acc == 1:
+        accounts = Account.objects.all()
+    else:
+        accounts = Account.objects.filter(Q(account_type=1) | Q(account_type=acc))
+
+    features, targets = create_features(accounts, acc)
+
     # Convert lists to NumPy arrays
     features = np.asarray(features)
     targets = np.asarray(targets)
@@ -88,13 +136,15 @@ def train_models(df, type, exp, acc):
     # Initialise classifiers and k-fold cross validation
     classifiers = [
         DecisionTreeClassifier(),
+        RandomForestClassifier(criterion='entropy', n_estimators=100),
         BernoulliNB(),
-        KNeighborsClassifier(),
-        LinearSVC()]
+        KNeighborsClassifier(n_neighbors=10, algorithm='auto'),
+        LinearSVC(dual=False)]
     kf = KFold(n_splits=10, shuffle=True)
+    skf = StratifiedKFold(n_splits=10)
 
     # Train classifier using K fold cross validation and save the best performing classifier
-    for train, test in kf.split(features):
+    for train, test in skf.split(features, targets):# kf.split(features)
         for index in range(4):
             classifiers[index].fit(features[train], targets[train])
             results = classifiers[index].predict(features[test])
@@ -159,18 +209,15 @@ d_multi = {'name': ['dt', 'nbb', 'knn', 'svm'],
            'harmonic_mean': [0, 0, 0, 0]}
 
 final_df = pd.DataFrame()
-final_df = final_df.append(train_models(pd.DataFrame(data=d_binary), 'r v f', 'few_1', 0), sort=False)
-final_df = final_df.append(train_models(pd.DataFrame(data=d_multi), 'r v ff v t v s', 'few_1', 1), sort=False)
-final_df = final_df.append(train_models(pd.DataFrame(data=d_binary), 'r v ff', 'few_1', 2), sort=False)
-final_df = final_df.append(train_models(pd.DataFrame(data=d_binary), 'r v s', 'few_1', 4), sort=False)
-final_df = final_df.append(train_models(pd.DataFrame(data=d_binary), 'f v t', 'few_1', 3), sort=False)
+final_df = final_df.append(train_models(pd.DataFrame(data=d_multi), 'r v ff v t v s', 'param_5', 1), sort=False)
+final_df = final_df.append(train_models(pd.DataFrame(data=d_binary), 'r v f', 'param_5', 0), sort=False)
+final_df = final_df.append(train_models(pd.DataFrame(data=d_binary), 'r v ff', 'param_5', 2), sort=False)
+final_df = final_df.append(train_models(pd.DataFrame(data=d_binary), 'r v s', 'param_5', 4), sort=False)
+final_df = final_df.append(train_models(pd.DataFrame(data=d_binary), 'r v t', 'param_5', 3), sort=False)
 
 with pd.option_context('display.max_rows', None, 'display.max_columns', None):
     print(final_df)
 
-# BASE_DIR = getattr(settings, "BASE_DIR")
-# results_file = os.path.join(BASE_DIR, 'data/results/exp1_binary_multi_sep_few.csv')
-# df.to_csv(results_file, header=False)
-
-# exp2_binary_multi_sep_all, exp3_binary_multi_sep_stratifying,
-# exp4_binary_multi_sep_resampling, exp5_binary_multi_sep_parameters
+BASE_DIR = getattr(settings, "BASE_DIR")
+results_file = os.path.join(BASE_DIR, 'data/results/exp5_binary_multi_sep_parameters.csv')
+final_df.to_csv(results_file, header=True)
