@@ -8,7 +8,7 @@ django.setup()
 from twitterstruth.models import Account
 from django.conf import settings
 
-# Compute the levenshtein distance between 2 strings
+# Compute the levenshtein distance between 2 strings, taken from 2nd Year assignment
 def levenshtein(s1, s2):
     if len(s1) < len(s2):
         return levenshtein(s2, s1)

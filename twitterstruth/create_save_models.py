@@ -90,11 +90,6 @@ def create_features(accounts):
             instance.append(1)
         else:
             instance.append(0)
-
-        if account.default_profile_image == 1:
-            instance.append(1)
-        else:
-            instance.append(0)
         features.append(instance)
 
         if account.real_account:
