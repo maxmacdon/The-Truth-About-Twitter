@@ -1,8 +1,8 @@
 body{
-	font-family: Georgia, serif;
-}
-div{
-    border: 5px ridge grey;
+    height: 100%;
+	font-family: Georgia serif;
+    background: url("../img/background.jpg") left top;
+    background-size: cover;
 }
 #header{
     position: relative;
@@ -17,9 +17,9 @@ div{
 	left:415px;
     width:470px;
 }
-#tweets{
+#result{
     position: relative;
-    top:140px;
-	left:200px;
-    width:900px;
+    top:200px;
+	left:400px;
+    width:500px;
 }

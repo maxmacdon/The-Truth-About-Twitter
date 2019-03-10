@@ -29,10 +29,7 @@ def levenshtein(s1, s2):
     return previous_row[-1]
 
 
-def index(request):
-    tweets = None
-    tweets_header = ''
-
+def home(request):
     if request.method == 'POST':
         form = UsernameForm(request.POST)
         if form.is_valid():
@@ -163,8 +160,11 @@ def index(request):
                     result = 'Social'
 
     else:
+        result = ''
         form = UsernameForm()
 
-    return render(request, 'index.html', {'form': form, 'result': result})
+    return render(request, 'twitterstruth/home.html', {'form': form, 'result': result})
 
 
+def about(request):
+    return render(request, 'twitterstruth/about.html')

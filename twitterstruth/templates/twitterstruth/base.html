@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link href="{% static 'css/web_style.css' %}" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="header">
+        <h1>The Truth About Twitter</h1>
+    </div>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
