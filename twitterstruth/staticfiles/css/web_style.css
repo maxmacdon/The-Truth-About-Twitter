@@ -1,25 +1,114 @@
-body{
-    height: 100%;
-	font-family: Georgia serif;
+@font-face {
+    font-family: libser;
+    src: local('LiberationSerif-Regular'),
+        url('../fonts/LiberationSerif-Regular.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: libser;
+    src: local('LiberationSerif-Bold'),
+        url('../fonts/LiberationSerif-Bold.ttf') format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: libser;
+    src: local('LiberationSerif-Italic'),
+        url('../fonts/LiberationSerif-Italic.ttf') format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: libser;
+    src: local('LiberationSerif-BoldItalic'),
+        url('../fonts/LiberationSerif-BoldItalic.ttf') format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+body {
+    font-family: libser, serif;
+}
+#form, #result, #about {
+    position: absolute;
+    background-color: #fff2e6;
+    box-sizing: border-box;
+    border: 3px groove #00acee;
+    border-radius: 3px;
+}
+ul, #header, #fyp {
+    position: fixed;
+    top: 0;
+    height: 10%;
+    box-sizing: border-box;
+    border-bottom: 5px groove #00acee;
+    text-align: center;
+    font-size: 1.5vw;
+    color: black;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  overflow: hidden;
+  width: 20%;
+}
+li {
+  float: left;
+  width: 50%;
+}
+li a {
+  display: block;
+  background-color: #1a1a1a;
+  color: #eee;
+  text-align: center;
+  font-size: 2vw;
+  line-height: 10%;
+  padding: 25% 10%;
+  text-decoration: none;
+  box-sizing: border-box;
+  border-right: 5px groove #00acee;
+}
+li a:hover {
+    background-color: #eee;
+    color: #1a1a1a;
+}
+#header {
+    left: 20%;
+    width: 60%;
+    line-height: 50%;
+    background: url("../img/pattern.jpg")
+}
+#fyp {
+    left: 80%;
+    width: 20%;
+    line-height: 80%;
+    border-left: 5px groove #00acee;
+    background-color: #1a1a1a;
+    color: #eee;
+}
+#content {
+    position: absolute;
+    top: 10%;
+	left: 0;
+    width: 100%;
+    height: 90%;
     background: url("../img/background.jpg") left top;
     background-size: cover;
 }
-#header{
-    position: relative;
-    top:40px;
-	left:400px;
-    width:500px;
-    text-align: center;
+#form {
+    top: 60%;
+	left: 30%;
+    width: 35%;
 }
-#form{
-    position: relative;
-    top:100px;
-	left:415px;
-    width:470px;
+#result {
+    top: 70%;
+	left: 30%;
+    width: 35%;
 }
-#result{
-    position: relative;
-    top:200px;
-	left:400px;
-    width:500px;
+#about {
+    top: 60%;
+	left: 30%;
+    width: 35%;
 }
