@@ -149,11 +149,11 @@ def home(request):
                             if social_spam.predict(instance) == 0:
                                 result, img = 'Real', 'static/gifs/social.gif'
                             else:
-                                result, img = 'A Social Spambot', 'static/gifs/snoop.gif'
+                                result, img = 'Social Spambot', 'static/gifs/snoop.gif'
                         else:
-                            result, img = 'A Traditional Spambot', 'static/gifs/traditional.gif'
+                            result, img = 'Traditional Spambot', 'static/gifs/traditional.gif'
                     else:
-                        result, img = 'A Fake Follower', 'static/gifs/follower.gif'
+                        result, img = 'Fake Follower', 'static/gifs/follower.gif'
             except tweepy.TweepError:
                 result, img = 'No user found', 'static/gifs/wasted.gif'
             check = True

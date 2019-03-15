@@ -14,6 +14,21 @@
             <form method="get">
                 <input id="back" type="submit" value="Go Back"/>
             </form>
+            {% if result != 'No user found' %}
+                <div style="position: fixed; top: 48.5%; left: 52%;">
+                    <a class="twitter-share-button" href="https://twitter.com/intent/tweet" data-size="large"
+                      data-text="Using this website I found out Twitter user {{ username }} is a {{ result }} account, Disclaimer: results not 100% accurate!"
+                      data-url="http://localhost:8000/twitterstruth/home?"
+                      data-hashtags="truth, bots" data-related="twitterapi,twitter">
+                        Tweet
+                    </a>
+                </div>
+                <div class="fb-share-button" data-href="http://localhost:8000/twitterstruth/home.html" data-layout="button" data-size="large"
+                    style="position: fixed; top: 48.5%; left: 58%;">
+                    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8000%2Ftwitterstruth%2Fhome.html&amp;src=sdkpreparse"
+                       class="fb-xfbml-parse-ignore">Share</a>
+                </div>
+            {% endif %}
         </div>
     {% else %}
         <div id="form">

@@ -4,7 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock %}</title>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2"></script>
     <link href="{% static 'css/web_style.css' %}" rel="stylesheet" type="text/css">
+    <meta name="twitter:card" content="summary">
+{#    <meta name="twitter:site" content="@{{ username }}">#}
+{#    <meta name="twitter:creator" content="Max MacDonald">#}
+    <meta property="og:url"           content="https://localhost:8000/twitterstruth/home.html" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="The Truth about Twitter" />
+    <meta property="og:description"   content="Helping you tell real accounts from fake" />
+    <meta property="og:image"         content="https://i.kym-cdn.com/photos/images/original/000/556/791/71a.png" />
 </head>
 <body>
     <a class="a-nav" href="home" class="top" style="left: 0;">Home</a>
@@ -16,8 +26,6 @@
         <p>A Final Year TUD Computer Science project</p>
     </div>
     <div id="content">
-        {% block content %}
-        {% endblock %}
         <img style="top:20%; left:0;" src="{% static 'img/evilbaby.jpg' %}" alt="Evil Baby: Fake News">
         <img style="top:40%; left:0;" src="{% static 'img/xfiles.jpg' %}" alt="X-files: Truth">
         <img style="top:60%; left:15%;" src="{% static 'img/tstory.jpg' %}" alt="Toy Story: Fake News">
@@ -26,6 +34,8 @@
         <img style="top:60%; left:65%;" src="{% static 'img/boromir.png' %}" alt="Boromir and Truth">
         <img style="top:40%; left: 80%;" src="{% static 'img/thinking.jpg' %}" alt="Thinking about Fake News">
         <img style="top:20%; left:80%;" src="{% static 'img/willywonka.jpg' %}" alt="Willy Wonka: Lying">
+        {% block content %}
+        {% endblock %}
     </div>
 </body>
 </html>
