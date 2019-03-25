@@ -5,27 +5,24 @@
 
 {% block content %}
 <div id="about">
-    <h4>What is the purpose of this site?</h4>
+    <h4>The Purpose of this site</h4>
     <p>
-        With the advent of social media there has been a rise of several types of fake accounts across each platform.
-        They range from benign automated company accounts to more sinister accounts masquerading as real humans.
-        This website allows you to see if  a Twitter account of their choosing is likely to be a real person or a fake account.
+        Allowing anyone to input a Twitter account and whether it is predicted to be a real person or a form of fake or bot account.
+        This is important because Twitter and other social media platforms have become polluted with fake accounts.
+        Datasets from the <a id="a-content" href="https://botometer.iuni.iu.edu/bot-repository/datasets.html" target="_blank">Bot Repository</a>
+        were used to train machine learning models to make these predictions based off of certain account properties.
     </p>
 
-    <h4>How does this site tell the difference?</h4>
+    <h4>Type of Predictions for an Account</h4>
     <p>
-        Datasets from the <a id="a-content" href="https://botometer.iuni.iu.edu/bot-repository/datasets.html">Bot Repository</a>
-        were used to train machine learning models to predict between real, fake follower, traditional spambot and
-        social spambot account types with some of the elements that are looked
-        at for these models are if there are any links in an accounts description, the ratio of friends to followers,
-        amount of times tweeted, the use of the default profile image and more.
+      Real - A real person<br>
+      Real (Verified) - Verified by Twitter to be who they say they are<br>
+      Fake Follower - A type of bot account that boosts other accounts follower numbers<br>
+      Traditional Bot - A type of bot account that masquerades somewhat OK as human<br>
+      Social Bot - A type of bot account that masquerades effectively as human
     </p>
 
-    <h4 style="color: red">DISCLAIMER</h4>
-    <p>
-        Predictions are not 100% accurate and will be wrong from time to time
-        especially when an odd real account or newer forms of bot accounts are encountered.
-    </p>
+    <h4 style="color: red">DISCLAIMER: Predictions are not 100% accurate</h4>
 </div>
 <div id="contact">
     <h4>Contact here for any queries:</h4>
