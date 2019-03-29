@@ -8,6 +8,9 @@ django.setup()
 from twitterstruth.models import Account
 from django.conf import settings
 
+
+# Source: https: // developers.facebook.com / docs / plugins / share - button /
+# Date Accessed: Jan 2019
 # Compute the levenshtein distance between 2 strings, taken from 2nd Year assignment
 def levenshtein(s1, s2):
     if len(s1) < len(s2):
@@ -29,6 +32,8 @@ def levenshtein(s1, s2):
         previous_row = current_row
 
     return previous_row[-1]
+# End Code Used
+
 
 # Read in users and tweets CSV files
 def read_in_csv(directory, account_type):

@@ -13,6 +13,7 @@ from twitterstruth.models import Account
 from django.db.models import Q
 from django.conf import settings
 
+
 # Convert account details into features and targets
 def create_features(accounts):
     features = []

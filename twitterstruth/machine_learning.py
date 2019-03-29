@@ -17,6 +17,7 @@ from twitterstruth.models import Account
 from django.db.models import Q
 from django.conf import settings
 
+
 # Convert account details into features and targets
 def create_features(accounts, acc):
     features = []
@@ -178,6 +179,7 @@ def train_models(df, type, exp, acc):
                     harmonic_mean += 1 / rec
             harmonic_mean = 1 / ((1 / len(recall_list)) * harmonic_mean)
             df.iloc[index, cm_index + 3] += harmonic_mean
+
     # Get average over all the folds
     df.recall = df.recall.div(10)
     df.precision = df.precision.div(10)

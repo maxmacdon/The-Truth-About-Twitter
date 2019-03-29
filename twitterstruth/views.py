@@ -1,5 +1,5 @@
 import json
-import tweepy
+import twython
 import os
 import pickle
 from django.shortcuts import render
@@ -7,6 +7,9 @@ from django.conf import settings
 from .forms import UsernameForm
 import numpy as np
 
+
+# Source: https: // developers.facebook.com / docs / plugins / share - button /
+# Date Accessed: Jan 2019
 def levenshtein(s1, s2):
     if len(s1) < len(s2):
         return levenshtein(s2, s1)
@@ -27,6 +30,7 @@ def levenshtein(s1, s2):
         previous_row = current_row
 
     return previous_row[-1]
+# End Code Used
 
 
 def home(request):
@@ -40,16 +44,14 @@ def home(request):
             with open(file_name, "r") as file:
                 creds = json.load(file)
 
-            auth = tweepy.OAuthHandler(creds['CONSUMER_KEY'], creds['CONSUMER_SECRET'])
-            auth.set_access_token(creds['ACCESS_TOKEN'], creds['ACCESS_SECRET'])
-
-            api = tweepy.API(auth, parser=tweepy.parsers.JSONParser())
-
             try:
-                user = api.get_user(username)
-                tweets = api.user_timeline(username)
-                if user['verified']:
+                # Setup Authorisation to Twitter API
+                twitter = twython.Twython(creds['CONSUMER_KEY'], access_token=creds['ACCESS_TOKEN'])
 
+                tweets = twitter.get_user_timeline(screen_name=username)
+                user = twitter.show_user(screen_name=username)
+
+                if user['verified']:
                     result, img = 'Real (Verified)', 'static/gifs/diamond.gif'
                 else:
                     instance = []
@@ -66,6 +68,7 @@ def home(request):
                                     if tweet_distance < lev_distance:
                                         lev_distance = tweet_distance
 
+                    # Check user's properties to create instance for model
                     if not user['screen_name']:
                         instance.append(1)
                     else:
@@ -140,6 +143,7 @@ def home(request):
 
                     fake_followers = pickle.load(open(os.path.join(settings.BASE_DIR,
                                                       'twitterstruth\\ml_models\\fake_followers.sav'), 'rb'))
+                    # Check ff then trad then social and only then return real
                     if fake_followers.predict(instance) == 0:
                         traditional_spam = pickle.load(open(os.path.join(settings.BASE_DIR,
                                                             'twitterstruth\\ml_models\\traditional_spam.sav'), 'rb'))
@@ -154,7 +158,7 @@ def home(request):
                             result, img = 'Traditional Spambot', 'static/gifs/traditional.gif'
                     else:
                         result, img = 'Fake Follower', 'static/gifs/follower.gif'
-            except tweepy.TweepError:
+            except twython.TwythonError:
                 result, img = 'No user found', 'static/gifs/wasted.gif'
             check = True
     else:

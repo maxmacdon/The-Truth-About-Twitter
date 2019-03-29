@@ -8,14 +8,17 @@
         <div id="result">
             <img id="img-result" src="{{ img }}" alt="Result Pic">
             <div id="results-text">
-                <p style="font-size: 200%;">The results for <br><i>{{ username }}</i> are:</p>
-                <p style="font-size: 260%; font-style:italic; text-shadow: 4px 4px 5px #F981FF;"><b>{{ result }}</b></p>
+                <p style="font-size: 150%;">The results for <br><i>{{ username }}</i> are:</p>
+                <p style="font-size: 240%; font-style:italic; text-shadow: 4px 4px 5px #F981FF;"><b>{{ result }}</b></p>
             </div>
             <form method="get">
                 <input id="back" type="submit" value="Go Back"/>
             </form>
             <a id="feedback" href="https://docs.google.com/forms/d/e/1FAIpQLSfR_QpPpCCGZZN7oAQVX_7SvDw7x1kIq9ezrpyuCLRrTQIklQ/viewform" target="_blank">Feedback</a>
             {% if result != 'No user found' %}
+                <!-- Source: https://publish.twitter.com/?buttonType=TweetButton&widget=Button
+                Date Accessed: March 2019 -->
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 <div style="position: absolute; top: 85%; left: 52%;">
                     <a class="twitter-share-button" href="https://twitter.com/intent/tweet" data-size="large"
                       data-text="Using this website I found out Twitter user {{ username }} is a {{ result }} account, Disclaimer: results not 100% accurate!"
@@ -24,11 +27,16 @@
                         Tweet
                     </a>
                 </div>
-                <div class="fb-share-button" data-href="http://localhost:8000/twitterstruth/home.html" data-layout="button" data-size="large"
-                    style="position: absolute; top: 85%; left: 73%;">
+                <!-- End Code Used -->
+                <!-- Source: https://developers.facebook.com/docs/plugins/share-button/
+                Date Accessed: March 2019 -->
+                <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2"></script>
+                <div class="fb-share-button" data-href="http://localhost:8000/twitterstruth/home?" data-layout="button" data-size="large"
+                    style="position: absolute; top: 85%; left: 72%;">
                     <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8000%2Ftwitterstruth%2Fhome.html&amp;src=sdkpreparse"
                        class="fb-xfbml-parse-ignore">Share</a>
                 </div>
+                <!-- End Code Used -->
             {% endif %}
         </div>
     {% else %}
