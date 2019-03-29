@@ -4,12 +4,7 @@
     <list default="true" id="2727b4b3-a721-45cb-bc14-7aa340bd2106" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/~$xMacDonald_Interim_Report.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitterstruth/create_save_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/twitterstruth/data_mining/create_save_models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitterstruth/data_mining_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/twitterstruth/data_mining/data_mining_menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitterstruth/machine_learning.py" beforeDir="false" afterPath="$PROJECT_DIR$/twitterstruth/data_mining/machine_learning.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitterstruth/read_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/twitterstruth/data_mining/read_results.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitterstruth/read_store.py" beforeDir="false" afterPath="$PROJECT_DIR$/twitterstruth/data_mining/read_store.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/Dissertation_MaxMacDonald_C157406661.docx" beforeDir="false" afterPath="$PROJECT_DIR$/documents/Dissertation_MaxMacDonald_C157406661.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/twitterstruth/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/twitterstruth/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,21 +69,21 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="6" />
-          <entry key="HTML" value="21" />
+          <entry key="HTML" value="22" />
           <entry key="JSON" value="9" />
-          <entry key="Markdown" value="2" />
-          <entry key="PLAIN_TEXT" value="44" />
-          <entry key="Python" value="148" />
+          <entry key="Markdown" value="3" />
+          <entry key="PLAIN_TEXT" value="47" />
+          <entry key="Python" value="154" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="2413" />
           <entry key="CommandLine" value="154" />
-          <entry key="HTML" value="4187" />
-          <entry key="Markdown" value="470" />
-          <entry key="PLAIN_TEXT" value="1535" />
-          <entry key="Python" value="16358" />
+          <entry key="HTML" value="4191" />
+          <entry key="Markdown" value="609" />
+          <entry key="PLAIN_TEXT" value="1572" />
+          <entry key="Python" value="16365" />
           <entry key="RegExp" value="1" />
         </counts>
       </usages-collector>
@@ -113,8 +108,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/twitterstruth/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2159">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="238">
+              <caret line="59" column="6" selection-start-line="59" selection-start-column="6" selection-end-line="59" selection-end-column="6" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -123,19 +118,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/The_Truth_about_Twitter/urls.py">
+        <entry file="file://$PROJECT_DIR$/twitterstruth/data_mining/create_save_models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+            <state relative-caret-position="51">
+              <caret line="113" column="4" lean-forward="true" selection-start-line="113" selection-start-column="4" selection-end-line="113" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/twitterstruth/urls.py">
+        <entry file="file://$PROJECT_DIR$/.ebextensions/django.config">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+            <state relative-caret-position="34">
+              <caret line="2" column="45" lean-forward="true" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -190,16 +185,16 @@
         <option value="$PROJECT_DIR$/twitterstruth/staticfiles/css/web_style.css" />
         <option value="$PROJECT_DIR$/twitterstruth/credentials/test.py" />
         <option value="$PROJECT_DIR$/twitterstruth/credentials/twitter_credentials.py" />
-        <option value="$PROJECT_DIR$/twitterstruth/templates/twitterstruth/base.html" />
         <option value="$PROJECT_DIR$/twitterstruth/templates/twitterstruth/home.html" />
         <option value="$PROJECT_DIR$/twitterstruth/views.py" />
         <option value="$PROJECT_DIR$/twitterstruth/read_store.py" />
         <option value="$PROJECT_DIR$/twitterstruth/create_save_models.py" />
         <option value="$PROJECT_DIR$/twitterstruth/machine_learning.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/.ebextensions/django.config" />
         <option value="$PROJECT_DIR$/twitterstruth/data_mining/data_mining_menu.py" />
+        <option value="$PROJECT_DIR$/twitterstruth/templates/twitterstruth/base.html" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.ebextensions/django.config" />
         <option value="$PROJECT_DIR$/twitterstruth/urls.py" />
       </list>
     </option>
@@ -234,18 +229,17 @@
             <path>
               <item name="The_Truth_about_Twitter" type="b2602c69:ProjectViewProjectNode" />
               <item name="The_Truth_about_Twitter" type="462c0819:PsiDirectoryNode" />
+              <item name=".ebextensions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The_Truth_about_Twitter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The_Truth_about_Twitter" type="462c0819:PsiDirectoryNode" />
               <item name="The_Truth_about_Twitter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="The_Truth_about_Twitter" type="b2602c69:ProjectViewProjectNode" />
               <item name="The_Truth_about_Twitter" type="462c0819:PsiDirectoryNode" />
               <item name="twitterstruth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="The_Truth_about_Twitter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="The_Truth_about_Twitter" type="462c0819:PsiDirectoryNode" />
-              <item name="twitterstruth" type="462c0819:PsiDirectoryNode" />
-              <item name="data_mining" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -668,7 +662,14 @@
       <option name="project" value="LOCAL" />
       <updated>1553862658777</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Pre-Deployment">
+      <created>1553878130519</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1553878130519</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TodoView">
@@ -684,12 +685,12 @@
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49658313" visible="true" weight="0.3184569" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49658313" visible="true" weight="0.3184569" />
       <window_info id="Structure" order="1" sideWeight="0.50341684" side_tool="true" weight="0.25037822" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3276923" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3246154" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3246154" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -699,7 +700,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32615384" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32761312" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32615384" />
       <window_info anchor="bottom" id="manage.py@The_Truth_about_Twitter" order="13" weight="0.08923077" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -752,7 +753,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Hitting Twitter API and returning specified users last 20 tweets" />
     <MESSAGE value="Set up PostgreSQL database and connected this app to it" />
     <MESSAGE value="1st Irteration of Reading in &amp; Data Prep" />
     <MESSAGE value="Model migrated to database and data inserted from csv files" />
@@ -777,12 +777,10 @@
     <MESSAGE value="Sharing to Twitter and Facebook added" />
     <MESSAGE value="Simple redesigns" />
     <MESSAGE value="Final coding parts before deployment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final coding parts before deployment" />
+    <MESSAGE value="Pre-Deployment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pre-Deployment" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/twitterstruth/admin.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/tweepy/streaming.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1630">
@@ -813,13 +811,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/twitterstruth/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="87" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="87" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/fake_followers/tweets.csv">
       <provider selected="true" editor-type-id="LargeFileEditor" />
@@ -972,13 +963,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twitterstruth/data_mining/create_save_models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1717">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/twitterstruth/data_mining/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1006,43 +990,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="170">
-            <caret line="10" column="65" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.ebextensions/django.config">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="49" lean-forward="true" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twitterstruth/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2159">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/The_Truth_about_Twitter/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twitterstruth/templates/twitterstruth/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" selection-start-column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/twitterstruth/staticfiles/css/web_style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1207">
@@ -1050,17 +997,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/The_Truth_about_Twitter/urls.py">
+    <entry file="file://$PROJECT_DIR$/twitterstruth/templates/twitterstruth/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        <state relative-caret-position="204">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twitterstruth/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="59" column="6" selection-start-line="59" selection-start-column="6" selection-end-line="59" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="102">
+            <caret line="7" column="58" lean-forward="true" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twitterstruth/data_mining/create_save_models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="113" column="4" lean-forward="true" selection-start-line="113" selection-start-column="4" selection-end-line="113" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/twitterstruth/urls.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/The_Truth_about_Twitter/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/The_Truth_about_Twitter/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.ebextensions/django.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="45" lean-forward="true" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
         </state>
       </provider>
     </entry>

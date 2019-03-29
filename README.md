@@ -8,5 +8,10 @@ Datasets used are too large to upload and as such can be found at their source:
 https://botometer.iuni.iu.edu/bot-repository/datasets.html
 
 A simple web app makes use of these models, allowing a user to check any Twitter 
-account they wish and share results to Facebook & Twitter ( Works when deployed via AWS )
+account they wish and share results to Facebook & Twitter
+
+Deployed Via AWS ( Datasets, documents and data mining directory all removed
+from code base before deployment )
+
+
 
