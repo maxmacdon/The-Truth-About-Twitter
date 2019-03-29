@@ -1,6 +1,7 @@
 import os
 
 
+# For local work, need to be altered for use in AWS instance
 python_path = '"C:\\College\\4th year\\FYP\\The_Truth_about_Twitter\\venv\\Scripts\\python.exe"'
 
 menu_check = True
