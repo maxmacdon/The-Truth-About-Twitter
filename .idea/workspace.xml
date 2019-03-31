@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2727b4b3-a721-45cb-bc14-7aa340bd2106" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/Dissertation_MaxMacDonald_C157406661.docx" beforeDir="false" afterPath="$PROJECT_DIR$/documents/Dissertation_MaxMacDonald_C157406661.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitterstruth/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/twitterstruth/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +27,7 @@
     <session id="1277990939">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="34" />
+          <entry key="project.closed" value="35" />
           <entry key="project.open.time.103" value="1" />
           <entry key="project.open.time.115" value="1" />
           <entry key="project.open.time.116" value="1" />
@@ -82,7 +79,7 @@
           <entry key="CommandLine" value="154" />
           <entry key="HTML" value="4191" />
           <entry key="Markdown" value="609" />
-          <entry key="PLAIN_TEXT" value="1572" />
+          <entry key="PLAIN_TEXT" value="1621" />
           <entry key="Python" value="16365" />
           <entry key="RegExp" value="1" />
         </counts>
@@ -130,7 +127,7 @@
         <entry file="file://$PROJECT_DIR$/.ebextensions/django.config">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="45" lean-forward="true" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+              <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -669,7 +666,14 @@
       <option name="project" value="LOCAL" />
       <updated>1553878130519</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Pre-Deployment - part2">
+      <created>1553882698209</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1553882698209</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TodoView">
@@ -690,7 +694,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3276923" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3246154" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3246154" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -753,7 +757,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Set up PostgreSQL database and connected this app to it" />
     <MESSAGE value="1st Irteration of Reading in &amp; Data Prep" />
     <MESSAGE value="Model migrated to database and data inserted from csv files" />
     <MESSAGE value="Web front end of VP done and added relevent sections to the report" />
@@ -778,7 +781,8 @@
     <MESSAGE value="Simple redesigns" />
     <MESSAGE value="Final coding parts before deployment" />
     <MESSAGE value="Pre-Deployment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pre-Deployment" />
+    <MESSAGE value="Pre-Deployment - part2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pre-Deployment - part2" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/tweepy/streaming.py">
@@ -1069,7 +1073,7 @@
     <entry file="file://$PROJECT_DIR$/.ebextensions/django.config">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="45" lean-forward="true" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
         </state>
       </provider>
     </entry>
