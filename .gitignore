@@ -6,11 +6,8 @@ __pycache__/
 # C extensions
 *.so
 
-# CSV extensions
-*.csv
-
 # Data directory
-/data/*
+Data_Mining/data/*
 
 # Distribution / packaging
 .Python
