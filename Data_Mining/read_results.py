@@ -1,15 +1,7 @@
-import os
-import django
 import pandas as pd
+import os
 
-# Ensure file when run separately can access models and settings
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'The_Truth_about_Twitter.settings')
-django.setup()
-from django.conf import settings
-
-
-BASE_DIR = getattr(settings, "BASE_DIR")
-results_path = os.path.join(BASE_DIR, 'data/results/')
+results_path = 'results/'
 
 # Read in all csv files in results directory and add them to dataframe
 final_df = pd.DataFrame()

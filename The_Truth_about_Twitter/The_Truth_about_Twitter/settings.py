@@ -77,11 +77,11 @@ WSGI_APPLICATION = 'The_Truth_about_Twitter.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'djangofyp',
-        'USER': 'fyp',
-        'PASSWORD': 'C15740661',
-        'HOST': 'localhost',
+        'ENGINE': '',
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
         'PORT': '',
     }
 }

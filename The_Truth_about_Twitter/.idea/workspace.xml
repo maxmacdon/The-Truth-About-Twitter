@@ -2,7 +2,76 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2727b4b3-a721-45cb-bc14-7aa340bd2106" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.ebextensions/django.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/The_Truth_about_Twitter.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/dictionaries/Max.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/other.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../documents/Dissertation_MaxMacDonald_C157406661.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../documents/Interim_Presentation_MaxMacDonald_C157406661.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../documents/Interim_Report_MaxMacDonald_C157406661.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../documents/Interim_Report_MaxMacDonald_C157406661.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../documents/MaxMacDonald_ProposalForm201819.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../documents/Project_GanttChart.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../documents/draft.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../documents/~$draft.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../documents/~$ssertation_MaxMacDonald_C157406661.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../documents/~WRL3617.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/credentials/twitter_credentials.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/credentials/twitter_credentials.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/data_mining/create_save_models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/data_mining/data_mining_menu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/data_mining/machine_learning.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/data_mining/read_results.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/data_mining/read_store.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/migrations/0002_auto_20190204_1926.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/migrations/0003_auto_20190213_1135.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/ml_models/fake_followers.sav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/ml_models/social_spam.sav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/ml_models/traditional_spam.sav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/css/web_style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/fonts/LiberationSerif-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/fonts/LiberationSerif-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/fonts/LiberationSerif-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/fonts/LiberationSerif-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/gifs/diamond.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/gifs/follower.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/gifs/snoop.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/gifs/social.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/gifs/traditional.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/gifs/wasted.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/img/boromir.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/img/evilbaby.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/img/handle.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/img/pattern.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/img/sadfake.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/img/thinking.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/img/tstory.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/img/willywonka.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/img/xfiles.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/templates/twitterstruth/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/templates/twitterstruth/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/templates/twitterstruth/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitterstruth/views.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,35 +168,35 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1721592623">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.46" value="1" />
+          <entry key="project.open.time.55" value="1" />
+          <entry key="project.opened" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Python" value="3" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/twitterstruth/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="59" column="6" selection-start-line="59" selection-start-column="6" selection-end-line="59" selection-end-column="6" />
+            <state relative-caret-position="51">
+              <caret line="10" column="100" selection-start-line="10" selection-start-column="100" selection-end-line="10" selection-end-column="100" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/twitterstruth/data_mining/create_save_models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="113" column="4" lean-forward="true" selection-start-line="113" selection-start-column="4" selection-end-line="113" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.ebextensions/django.config">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -155,7 +224,7 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -168,8 +237,6 @@
         <option value="$PROJECT_DIR$/venv/Lib/site-packages/tweepy/streaming.py" />
         <option value="$PROJECT_DIR$/twitterstruth/templates/twitterstruth/twitterstruth.css" />
         <option value="$PROJECT_DIR$/twitterstruth/templates/twitterstruth/web_style.css" />
-        <option value="$PROJECT_DIR$/The_Truth_about_Twitter/settings.py" />
-        <option value="$PROJECT_DIR$/twitterstruth/models.py" />
         <option value="$PROJECT_DIR$/data/results/exp1_binary_multi_sep_few.csv" />
         <option value="$PROJECT_DIR$/data/results/exp2_binary_multi_sep_all.csv" />
         <option value="$PROJECT_DIR$/data/results/exp3_binary_multi_sep_stratifying.csv" />
@@ -183,16 +250,18 @@
         <option value="$PROJECT_DIR$/twitterstruth/credentials/test.py" />
         <option value="$PROJECT_DIR$/twitterstruth/credentials/twitter_credentials.py" />
         <option value="$PROJECT_DIR$/twitterstruth/templates/twitterstruth/home.html" />
-        <option value="$PROJECT_DIR$/twitterstruth/views.py" />
         <option value="$PROJECT_DIR$/twitterstruth/read_store.py" />
         <option value="$PROJECT_DIR$/twitterstruth/create_save_models.py" />
         <option value="$PROJECT_DIR$/twitterstruth/machine_learning.py" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/twitterstruth/data_mining/data_mining_menu.py" />
         <option value="$PROJECT_DIR$/twitterstruth/templates/twitterstruth/base.html" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.ebextensions/django.config" />
         <option value="$PROJECT_DIR$/twitterstruth/urls.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/twitterstruth/views.py" />
+        <option value="$PROJECT_DIR$/twitterstruth/models.py" />
+        <option value="$PROJECT_DIR$/The_Truth_about_Twitter/settings.py" />
       </list>
     </option>
   </component>
@@ -216,6 +285,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -238,19 +308,24 @@
               <item name="The_Truth_about_Twitter" type="462c0819:PsiDirectoryNode" />
               <item name="twitterstruth" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="The_Truth_about_Twitter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The_Truth_about_Twitter" type="462c0819:PsiDirectoryNode" />
+              <item name="twitterstruth" type="462c0819:PsiDirectoryNode" />
+              <item name="ml_models" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Machine Learning/CA/CA2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -392,7 +467,7 @@
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="launchJavascriptDebuger" value="false" />
@@ -689,7 +764,7 @@
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49658313" visible="true" weight="0.3184569" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49658313" visible="true" weight="0.21406959" />
       <window_info id="Structure" order="1" sideWeight="0.50341684" side_tool="true" weight="0.25037822" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -757,6 +832,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
     <MESSAGE value="1st Irteration of Reading in &amp; Data Prep" />
     <MESSAGE value="Model migrated to database and data inserted from csv files" />
     <MESSAGE value="Web front end of VP done and added relevent sections to the report" />
@@ -785,13 +863,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="Pre-Deployment - part2" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/tweepy/streaming.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1630">
-          <caret line="465" column="26" selection-start-line="465" selection-start-column="26" selection-end-line="465" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/tweepy/streaming.py" />
     <entry file="file://$PROJECT_DIR$/twitterstruth/apps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -816,104 +888,24 @@
     <entry file="file://$PROJECT_DIR$/twitterstruth/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/fake_followers/tweets.csv">
-      <provider selected="true" editor-type-id="LargeFileEditor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/social_spambots_1/tweets.csv">
-      <provider selected="true" editor-type-id="LargeFileEditor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/genuine_accounts/tweets.csv">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state>
-          <caret column="29" selection-start-column="22" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/fake_followers/users.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-56686" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/genuine_accounts/users.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-58760">
-          <caret line="1" column="176" selection-start-line="1" selection-start-column="102" selection-end-line="1" selection-end-column="176" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/social_spambots_1/users.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16566" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/social_spambots_2/users.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-58488" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/social_spambots_3/users.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7607" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/traditional_spambots_1/users.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16719" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/traditional_spambots_2/users.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1419" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/traditional_spambots_3/users.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6570" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/traditional_spambots_4/users.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-18895" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/fake_followers/tweets.csv" />
+    <entry file="file://$PROJECT_DIR$/data/social_spambots_1/tweets.csv" />
+    <entry file="file://$PROJECT_DIR$/data/genuine_accounts/tweets.csv" />
+    <entry file="file://$PROJECT_DIR$/data/fake_followers/users.csv" />
+    <entry file="file://$PROJECT_DIR$/data/genuine_accounts/users.csv" />
+    <entry file="file://$PROJECT_DIR$/data/social_spambots_1/users.csv" />
+    <entry file="file://$PROJECT_DIR$/data/social_spambots_2/users.csv" />
+    <entry file="file://$PROJECT_DIR$/data/social_spambots_3/users.csv" />
+    <entry file="file://$PROJECT_DIR$/data/traditional_spambots_1/users.csv" />
+    <entry file="file://$PROJECT_DIR$/data/traditional_spambots_2/users.csv" />
+    <entry file="file://$PROJECT_DIR$/data/traditional_spambots_3/users.csv" />
+    <entry file="file://$PROJECT_DIR$/data/traditional_spambots_4/users.csv" />
     <entry file="file://$PROJECT_DIR$/data/lev_dis.csv" />
-    <entry file="file://$PROJECT_DIR$/twitterstruth/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="22" column="49" lean-forward="true" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/results/exp1_binary_multi_sep_few.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/results/exp3_binary_multi_sep_stratifying.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/results/exp4_binary_multi_sep_resampling.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/results/exp5_binary_multi_sep_parameters.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/results/exp2_binary_multi_sep_all.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/The_Truth_about_Twitter/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="135" column="20" lean-forward="true" selection-start-line="135" selection-start-column="20" selection-end-line="135" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/results/exp1_binary_multi_sep_few.csv" />
+    <entry file="file://$PROJECT_DIR$/data/results/exp3_binary_multi_sep_stratifying.csv" />
+    <entry file="file://$PROJECT_DIR$/data/results/exp4_binary_multi_sep_resampling.csv" />
+    <entry file="file://$PROJECT_DIR$/data/results/exp5_binary_multi_sep_parameters.csv" />
+    <entry file="file://$PROJECT_DIR$/data/results/exp2_binary_multi_sep_all.csv" />
     <entry file="file://$PROJECT_DIR$/twitterstruth/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -940,9 +932,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -953,47 +942,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twitterstruth/data_mining/read_results.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twitterstruth/data_mining/read_store.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twitterstruth/data_mining/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/twitterstruth/data_mining/read_results.py" />
+    <entry file="file://$PROJECT_DIR$/twitterstruth/data_mining/read_store.py" />
+    <entry file="file://$PROJECT_DIR$/twitterstruth/data_mining/__init__.py" />
     <entry file="file://$PROJECT_DIR$/The_Truth_about_Twitter/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/twitterstruth/data_mining/machine_learning.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3019">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twitterstruth/data_mining/data_mining_menu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/twitterstruth/data_mining/machine_learning.py" />
+    <entry file="file://$PROJECT_DIR$/twitterstruth/data_mining/data_mining_menu.py" />
     <entry file="file://$PROJECT_DIR$/twitterstruth/staticfiles/css/web_style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1207">
@@ -1008,23 +964,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twitterstruth/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="59" column="6" selection-start-line="59" selection-start-column="6" selection-end-line="59" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1032,13 +972,6 @@
             <caret line="7" column="58" lean-forward="true" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twitterstruth/data_mining/create_save_models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="113" column="4" lean-forward="true" selection-start-line="113" selection-start-column="4" selection-end-line="113" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -1070,10 +1003,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/twitterstruth/data_mining/create_save_models.py" />
+    <entry file="file://$PROJECT_DIR$/requirements.txt" />
     <entry file="file://$PROJECT_DIR$/.ebextensions/django.config">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twitterstruth/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/The_Truth_about_Twitter/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="77" column="13" lean-forward="true" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twitterstruth/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="10" column="100" selection-start-line="10" selection-start-column="100" selection-end-line="10" selection-end-column="100" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

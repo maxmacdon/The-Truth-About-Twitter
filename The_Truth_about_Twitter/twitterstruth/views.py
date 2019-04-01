@@ -8,7 +8,7 @@ from .forms import UsernameForm
 import numpy as np
 
 
-# Source: https: // developers.facebook.com / docs / plugins / share - button /
+# Source: https://en.wikibooks.org/wiki/Algorithm_Implementation/Strings/Levenshtein_distance#Python
 # Date Accessed: Jan 2019
 def levenshtein(s1, s2):
     if len(s1) < len(s2):
