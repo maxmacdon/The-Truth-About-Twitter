@@ -2,76 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d3b3d72-498f-4814-a03e-33aafa0fa47c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.ebextensions/django.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/The_Truth_about_Twitter.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/dictionaries/Max.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/other.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../The_Truth_about_Twitter/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../The_Truth_about_Twitter/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../The_Truth_about_Twitter/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../The_Truth_about_Twitter/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../documents/Dissertation_MaxMacDonald_C157406661.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../documents/Interim_Presentation_MaxMacDonald_C157406661.pptx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../documents/Interim_Report_MaxMacDonald_C157406661.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../documents/Interim_Report_MaxMacDonald_C157406661.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../documents/MaxMacDonald_ProposalForm201819.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../documents/Project_GanttChart.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../documents/draft.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../documents/~$draft.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../documents/~$ssertation_MaxMacDonald_C157406661.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../documents/~WRL3617.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/credentials/twitter_credentials.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/credentials/twitter_credentials.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/data_mining/create_save_models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/data_mining/data_mining_menu.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/data_mining/machine_learning.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/data_mining/read_results.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/data_mining/read_store.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/forms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/migrations/0002_auto_20190204_1926.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/migrations/0003_auto_20190213_1135.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/ml_models/fake_followers.sav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/ml_models/social_spam.sav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/ml_models/traditional_spam.sav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/css/web_style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/fonts/LiberationSerif-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/fonts/LiberationSerif-BoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/fonts/LiberationSerif-Italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/fonts/LiberationSerif-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/gifs/diamond.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/gifs/follower.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/gifs/snoop.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/gifs/social.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/gifs/traditional.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/gifs/wasted.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/img/boromir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/img/evilbaby.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/img/handle.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/img/pattern.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/img/sadfake.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/img/thinking.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/img/tstory.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/img/willywonka.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/staticfiles/img/xfiles.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/templates/twitterstruth/about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/templates/twitterstruth/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/templates/twitterstruth/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterstruth/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/read_store.py" beforeDir="false" afterPath="$PROJECT_DIR$/read_store.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Documents/Dissertation_MaxMacDonald_C157406661.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../Project Documents/Dissertation_MaxMacDonald_C157406661.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Documents/Project_GanttChart.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../Project Documents/Project_GanttChart.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Documents/draft.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../Project Documents/draft.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Documents/~$draft.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../Project Documents/~$draft.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Documents/~$ssertation_MaxMacDonald_C157406661.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../Project Documents/~$ssertation_MaxMacDonald_C157406661.docx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,18 +36,19 @@
     <session id="1513280940">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.62" value="1" />
           <entry key="project.open.time.72" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Ini" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="12" />
+          <entry key="Python" value="15" />
           <entry key="SQL" value="1" />
           <entry key="Scratch" value="1" />
         </counts>
@@ -120,7 +57,7 @@
         <counts>
           <entry key="Ini" value="6" />
           <entry key="PLAIN_TEXT" value="9" />
-          <entry key="Python" value="1451" />
+          <entry key="Python" value="1455" />
           <entry key="SQL" value="6" />
         </counts>
       </usages-collector>
@@ -128,25 +65,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/create_save_models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="114" column="8" selection-start-line="114" selection-start-column="8" selection-end-line="114" selection-end-column="40" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/machine_learning.py">
+        <entry file="file://$PROJECT_DIR$/read_store.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1064">
-              <caret line="127" column="40" selection-start-line="127" selection-start-column="40" selection-end-line="127" selection-end-column="40" />
+            <state relative-caret-position="102">
+              <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#0#19#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -171,9 +96,9 @@
         <option value="$PROJECT_DIR$/read_results.py" />
         <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/database.ini" />
-        <option value="$PROJECT_DIR$/read_store.py" />
         <option value="$PROJECT_DIR$/create_save_models.py" />
         <option value="$PROJECT_DIR$/machine_learning.py" />
+        <option value="$PROJECT_DIR$/read_store.py" />
       </list>
     </option>
   </component>
@@ -208,6 +133,11 @@
             <path>
               <item name="Data_Mining" type="b2602c69:ProjectViewProjectNode" />
               <item name="Data_Mining" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Data_Mining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Data_Mining" type="462c0819:PsiDirectoryNode" />
               <item name="results" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -219,7 +149,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../The_Truth_about_Twitter" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="IntelliLang.Configuration" />
@@ -285,9 +215,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4977064" visible="true" weight="0.16414523" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4977064" visible="true" weight="0.3260212" />
       <window_info id="Structure" order="1" sideWeight="0.5022936" side_tool="true" weight="0.16414523" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -324,16 +253,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/read_results.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -351,19 +270,10 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/58906f89-64f8-483a-9c21-d62aa18640ec/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/read_store.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1666">
-          <caret line="1" selection-start-line="1" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/test.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/results/test.csv" />
     <entry file="file://$PROJECT_DIR$/create_save_models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
+        <state relative-caret-position="194">
           <caret line="114" column="8" selection-start-line="114" selection-start-column="8" selection-end-line="114" selection-end-column="40" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -371,12 +281,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/read_results.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/machine_learning.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1064">
+        <state relative-caret-position="2159">
           <caret line="127" column="40" selection-start-line="127" selection-start-column="40" selection-end-line="127" selection-end-column="40" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/read_store.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>

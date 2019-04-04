@@ -34,10 +34,7 @@ def read_in_csv(directory, account_type):
     conn = None
     sql = """INSERT INTO account(id, real_account, account_type, name, screen_name, statuses_count,
                             followers_count, friends_count, favourites_count, listed_count, url, lang, time_zone,
-                            default_profile_image, default_profile, location, geo_enabled, 
-                            profile_image_url, profile_image_url_https,
-                            profile_banner_url, description, profile_use_background_image, profile_background_image_url,
-                            profile_background_image_url_https, profile_background_tile, utc_offset, protected,
+                            default_profile_image, default_profile, location, geo_enabled, description, utc_offset, 
                             verified, lev_distance)
                             VALUES(%s);"""
     try:
@@ -95,13 +92,8 @@ def read_in_csv(directory, account_type):
                               getattr(user, 'url'), getattr(user, 'lang'), getattr(user, 'time_zone'),
                               getattr(user, 'default_profile_image'), getattr(user, 'default_profile'),
                               getattr(user, 'location'), getattr(user, 'geo_enabled'),
-                              getattr(user, 'profile_image_url'), getattr(user, 'profile_image_url_https'),
-                              getattr(user, 'profile_banner_url'), getattr(user, 'description'),
-                              getattr(user, 'profile_use_background_image'),
-                              getattr(user, 'profile_background_image_url'),
-                              getattr(user, 'profile_background_image_url_https'),
-                              getattr(user, 'profile_background_tile'), getattr(user, 'utc_offset'),
-                              getattr(user, 'protected'), getattr(user, 'verified'), lev_distance,))
+                              getattr(user, 'description'), getattr(user, 'utc_offset'),
+                              getattr(user, 'verified'), lev_distance,))
             conn.commit()
             cur.close()
     except FileNotFoundError:

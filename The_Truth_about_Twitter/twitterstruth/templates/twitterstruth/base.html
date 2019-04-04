@@ -11,30 +11,15 @@
     <meta property="og:url"           content="http://localhost:8000/twitterstruth/home?" />
     <meta property="og:type"          content="website" />
     <meta property="og:title"         content="The Truth about Twitter" />
-    <meta property="og:description"   content="Helping you tell real accounts from fake" />
+    <meta property="og:description"   content="Helping you tell real Twitter accounts from fake ones" />
     <meta property="og:image"         content="https://i.kym-cdn.com/photos/images/original/000/556/791/71a.png" />
     <!-- End Code Used -->
 </head>
 <body>
-    <a class="a-nav" href="home" style="left: 0;">Home</a>
-    <a class="a-nav" href="about" style="left: 10%;">About</a>
     <div id="header">
         <h1>The Truth About Twitter</h1>
     </div>
-    <div id="fyp">
-        <p>A Final Year TUD Computer Science project</p>
-    </div>
-    <div id="content">
-        <img style="top:20%; left:0;" src="{% static 'img/evilbaby.jpg' %}" alt="Evil Baby: Fake News">
-        <img style="top:40%; left:0;" src="{% static 'img/xfiles.jpg' %}" alt="X-files: Truth">
-        <img style="top:60%; left:15%;" src="{% static 'img/tstory.jpg' %}" alt="Toy Story: Fake News">
-        <img style="top:80%; left:30%;" src="{% static 'img/handle.jpg' %}" alt="You can't handle the Truth">
-        <img style="top:80%; left:50%;" src="{% static 'img/sadfake.jpg' %}" alt="Can't separate fake from real">
-        <img style="top:60%; left:65%;" src="{% static 'img/boromir.png' %}" alt="Boromir and Truth">
-        <img style="top:40%; left: 80%;" src="{% static 'img/thinking.jpg' %}" alt="Thinking about Fake News">
-        <img style="top:20%; left:80%;" src="{% static 'img/willywonka.jpg' %}" alt="Willy Wonka: Lying">
-        {% block content %}
-        {% endblock %}
-    </div>
+    {% block content %}
+    {% endblock %}
 </body>
 </html>

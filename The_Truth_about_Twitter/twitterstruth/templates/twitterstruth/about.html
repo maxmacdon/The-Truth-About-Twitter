@@ -1,8 +1,3 @@
-{% extends 'base.html' %}
-{% load static %}
-
-{% block title %}The Truth About Twitter - About{% endblock %}
-
 {% block content %}
 <div id="about">
     <h4>The Purpose of this site</h4>
@@ -12,22 +7,6 @@
         Datasets from the <a id="a-content" href="https://botometer.iuni.iu.edu/bot-repository/datasets.html" target="_blank">Bot Repository</a>
         were used to train machine learning models to make these predictions based off of certain account properties.
     </p>
-
-    <h4>Type of Predictions for an Account</h4>
-    <p>
-      Real - A real person<br>
-      Real (Verified) - Verified by Twitter to be who they say they are<br>
-      Fake Follower - A type of bot account that boosts other accounts follower numbers<br>
-      Traditional Bot - A type of bot account that masquerades somewhat OK as human<br>
-      Social Bot - A type of bot account that masquerades effectively as human
-    </p>
-
-    <h4 style="color: red">DISCLAIMER: Predictions are not 100% accurate</h4>
 </div>
-<div id="contact">
-    <h4>Contact here for any queries:</h4>
-    <p>
-        maxwell.macdonald@mydit.ie
-    </p>
-</div>
+
 {% endblock %}

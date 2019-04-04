@@ -52,7 +52,7 @@ def home(request):
                 user = twitter.show_user(screen_name=username)
 
                 if user['verified']:
-                    result, img = 'Real (Verified)', 'static/gifs/diamond.gif'
+                    result = 'Real (Verified)'
                 else:
                     instance = []
 
@@ -141,33 +141,30 @@ def home(request):
                     instance = np.asarray(instance)
                     instance = instance.reshape(1, -1)
 
-                    fake_followers = pickle.load(open(os.path.join(settings.BASE_DIR,
-                                                      'twitterstruth\\ml_models\\fake_followers.sav'), 'rb'))
-                    # Check ff then trad then social and only then return real
-                    if fake_followers.predict(instance) == 0:
+                    # Check social then trad then ff and only then return real
+                    social_spam = pickle.load(open(os.path.join(settings.BASE_DIR,
+                                                                'twitterstruth\\ml_models\\social_spam.sav'), 'rb'))
+                    if social_spam.predict(instance) == 0:
                         traditional_spam = pickle.load(open(os.path.join(settings.BASE_DIR,
                                                             'twitterstruth\\ml_models\\traditional_spam.sav'), 'rb'))
                         if traditional_spam.predict(instance) == 0:
-                            social_spam = pickle.load(open(os.path.join(settings.BASE_DIR,
-                                                           'twitterstruth\\ml_models\\social_spam.sav'), 'rb'))
-                            if social_spam.predict(instance) == 0:
-                                result, img = 'Real', 'static/gifs/social.gif'
+                            fake_followers = pickle.load(open(os.path.join(settings.BASE_DIR,
+                                                                           'twitterstruth\\ml_models\\fake_followers.sav'),
+                                                              'rb'))
+                            if fake_followers.predict(instance) == 0:
+                                result = 'Real'
                             else:
-                                result, img = 'Social Spambot', 'static/gifs/snoop.gif'
+                                result = 'Fake Follower'
                         else:
-                            result, img = 'Traditional Spambot', 'static/gifs/traditional.gif'
+                            result = 'Traditional Spambot'
                     else:
-                        result, img = 'Fake Follower', 'static/gifs/follower.gif'
+                        result = 'Social Spambot'
             except twython.TwythonError:
-                result, img = 'No user found', 'static/gifs/wasted.gif'
+                result = 'No user found'
             check = True
     else:
         check = False
-        result, img, username = '', '', ''
+        result, username = '', ''
         form = UsernameForm()
-    return render(request, 'twitterstruth/home.html', {'form': form, 'result': result, 'img': img,
+    return render(request, 'twitterstruth/home.html', {'form': form, 'result': result,
                                                        'check': check, 'username': username})
-
-
-def about(request):
-    return render(request, 'twitterstruth/about.html')

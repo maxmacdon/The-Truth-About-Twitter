@@ -1,16 +1,35 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}The Truth About Twitter - Home{% endblock %}
+{% block title %}The Truth About Twitter{% endblock %}
 
 {% block content %}
     {% if check %}
+        <div id="back-result">
+        </div>
         <div id="result">
-            <img id="img-result" src="{{ img }}" alt="Result Pic">
-            <div id="results-text">
-                <p style="font-size: 150%;">The results for <br><i>{{ username }}</i> are:</p>
-                <p style="font-size: 240%; font-style:italic; text-shadow: 4px 4px 5px #F981FF;"><b>{{ result }}</b></p>
+            <div style="font-size: 150%; padding-top: 4%;">The result for <i>{{ username }}</i> is:<br>
+            <b style="font-size: 160%; font-family: ananda, cursive;">{{ result }}</b></div>
+            <div style="font-size: 150%;">
+                {% if result == 'Real (Verified)' %}
+                    Verified by Twitter<br>
+                    to be who they say they are
+                {% elif result == 'No user found' %}
+                    No account matching that handle can be found
+                {% elif result == 'Real' %}
+                    Looks like a real person
+                {% elif result == 'Social Spambot' %}
+                    This type of account<br>
+                    masquerades efficiently as human
+                {% elif result == 'Traditional Spambot' %}
+                    This type of account operates<br>
+                    quite noticeably as a bot
+                {% elif result == 'Fake Follower' %}
+                    This type of account boosts<br>
+                    other accounts follower count
+                {% endif %}
             </div>
+            <h4 style="color: red">DISCLAIMER: Predictions are not 100% accurate</h4>
             <form method="get">
                 <input id="back" type="submit" value="Go Back"/>
             </form>
@@ -40,6 +59,8 @@
             {% endif %}
         </div>
     {% else %}
+        <div id="back-form">
+        </div>
         <div id="form">
             <form method="post">
                 {% csrf_token %}
