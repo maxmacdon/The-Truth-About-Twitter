@@ -24,6 +24,7 @@ SECRET_KEY = '@hwo!7=mpbsq^ax4sdntffy7(+s^izi+d##!h#zfexysq4%na4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# ALLOWED_HOSTS = ['127.0.0.1']
 ALLOWED_HOSTS = ['TTaT-env.tmmyjzitps.us-west-2.elasticbeanstalk.com']
 
 

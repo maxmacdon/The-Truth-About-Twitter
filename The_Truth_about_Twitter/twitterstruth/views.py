@@ -1,11 +1,25 @@
 import json
 import twython
 import os
-import pickle
+from sklearn.tree import DecisionTreeClassifier
 from django.shortcuts import render
 from django.conf import settings
 from .forms import UsernameForm
 import numpy as np
+
+
+# Source: https://stackabuse.com/scikit-learn-save-and-restore-models/
+# Date Accessed: April 2019
+# A method for loading data from JSON file
+def load_json(filepath):
+    with open(filepath, 'r') as file:
+        dict_ = json.load(file)
+
+    x_train = np.asarray(dict_['x_train']) if dict_['x_train'] != 'None' else None
+    y_train = np.asarray(dict_['y_train']) if dict_['y_train'] != 'None' else None
+
+    return x_train, y_train
+# End Code Used
 
 
 # Source: https://en.wikibooks.org/wiki/Algorithm_Implementation/Strings/Levenshtein_distance#Python
@@ -142,15 +156,20 @@ def home(request):
                     instance = instance.reshape(1, -1)
 
                     # Check social then trad then ff and only then return real
-                    social_spam = pickle.load(open(os.path.join(settings.BASE_DIR,
-                                                                'twitterstruth/ml_models/social_spam.sav'), 'rb'))
+                    social_spam = DecisionTreeClassifier()
+                    social_x_train, social_y_train = load_json(os.path.join(settings.BASE_DIR,
+                                                                            'twitterstruth/ml_models/social_spam.json'))
+                    social_spam.fit(social_x_train, social_y_train)
                     if social_spam.predict(instance) == 0:
-                        traditional_spam = pickle.load(open(os.path.join(settings.BASE_DIR,
-                                                            'twitterstruth/ml_models/traditional_spam.sav'), 'rb'))
+                        traditional_spam = DecisionTreeClassifier()
+                        trad_x_train, trad_y_train = load_json(os.path.join(settings.BASE_DIR,
+                                                                    'twitterstruth/ml_models/traditional_spam.json'))
+                        traditional_spam.fit(trad_x_train, trad_y_train)
                         if traditional_spam.predict(instance) == 0:
-                            fake_followers = pickle.load(open(os.path.join(settings.BASE_DIR,
-                                                                           'twitterstruth/ml_models/fake_followers.sav')
-                                                              , 'rb'))
+                            fake_followers = DecisionTreeClassifier()
+                            ff_x_train, ff_y_train = load_json(os.path.join(settings.BASE_DIR,
+                                                                    'twitterstruth/ml_models/fake_followers.json'))
+                            fake_followers.fit(ff_x_train, ff_y_train)
                             if fake_followers.predict(instance) == 0:
                                 result = 'Real'
                             else:

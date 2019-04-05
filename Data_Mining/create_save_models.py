@@ -2,8 +2,8 @@ import numpy as np
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import KFold
 from sklearn.metrics import recall_score
-import pickle
 import psycopg2
+import json
 from config import config
 
 
@@ -109,7 +109,7 @@ def create_features(accounts):
     return features, targets
 
 
-def train_models(acc, filename):
+def train_models(acc, filepath):
     conn = None
     try:
         # Load db parameters and connect
@@ -143,10 +143,21 @@ def train_models(acc, filename):
 
             if harmonic_mean > best_hm:
                 best_hm = harmonic_mean
-                final_clf = clf
+                best_train = features[train]
+                best_targets = targets[train]
 
-        # Save classifier to file
-        pickle.dump(final_clf, open(filename, 'wb'))
+        # Source: https://stackabuse.com/scikit-learn-save-and-restore-models/
+        # Date Accessed: April 2019
+        # A method for saving object data to JSON file
+        dict_ = {}
+        dict_['x_train'] = best_train.tolist() if best_train is not None else 'None'
+        dict_['y_train'] = best_targets.tolist() if best_targets is not None else 'None'
+
+        # Create json and save to file
+        json_txt = json.dumps(dict_, indent=4)
+        with open(filepath, 'w') as file:
+            file.write(json_txt)
+        # End Code Used
     except (Exception, psycopg2.DatabaseError) as error:
         print(error)
     finally:
@@ -154,6 +165,6 @@ def train_models(acc, filename):
             conn.close()
 
 
-train_models(2, '../The_Truth_about_Twitter/twitterstruth/ml_models/fake_followers.sav')
-train_models(3, '../The_Truth_about_Twitter/twitterstruth/ml_models/traditional_spam.sav')
-train_models(4, '../The_Truth_about_Twitter/twitterstruth/ml_models/social_spam.sav')
+train_models(2, '../The_Truth_about_Twitter/twitterstruth/ml_models/fake_followers.json')
+train_models(3, '../The_Truth_about_Twitter/twitterstruth/ml_models/traditional_spam.json')
+train_models(4, '../The_Truth_about_Twitter/twitterstruth/ml_models/social_spam.json')
