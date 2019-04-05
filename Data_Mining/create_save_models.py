@@ -120,7 +120,7 @@ def train_models(acc, filename):
         # Retrieve specified accounts
         cur.execute("SELECT name, default_profile_image, geo_enabled, description, friends_count, statuses_count,"
                     "followers_count, lev_distance, lang, real_account"
-                    " FROM account WHERE account_type in (1," + acc + ")")
+                    " FROM account WHERE account_type in (1," + str(acc) + ")")
         accounts = cur.fetchall()
         features, targets = create_features(accounts)
 

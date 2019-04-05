@@ -24,7 +24,7 @@ SECRET_KEY = '@hwo!7=mpbsq^ax4sdntffy7(+s^izi+d##!h#zfexysq4%na4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['TTaT-env.tmmyjzitps.us-west-2.elasticbeanstalk.com']
 
 
 # Application definition
@@ -133,6 +133,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'twitterstruth\\staticfiles'),
+    os.path.join(BASE_DIR, 'twitterstruth/staticfiles'),
 )
 # End code used

@@ -40,7 +40,7 @@ def home(request):
             username = form.cleaned_data['username']
 
             # Read in Twitter dev credentials
-            file_name = os.path.join(settings.BASE_DIR, 'twitterstruth\\credentials\\twitter_credentials.json')
+            file_name = os.path.join(settings.BASE_DIR, 'twitterstruth/credentials/twitter_credentials.json')
             with open(file_name, "r") as file:
                 creds = json.load(file)
 
@@ -143,14 +143,14 @@ def home(request):
 
                     # Check social then trad then ff and only then return real
                     social_spam = pickle.load(open(os.path.join(settings.BASE_DIR,
-                                                                'twitterstruth\\ml_models\\social_spam.sav'), 'rb'))
+                                                                'twitterstruth/ml_models/social_spam.sav'), 'rb'))
                     if social_spam.predict(instance) == 0:
                         traditional_spam = pickle.load(open(os.path.join(settings.BASE_DIR,
-                                                            'twitterstruth\\ml_models\\traditional_spam.sav'), 'rb'))
+                                                            'twitterstruth/ml_models/traditional_spam.sav'), 'rb'))
                         if traditional_spam.predict(instance) == 0:
                             fake_followers = pickle.load(open(os.path.join(settings.BASE_DIR,
-                                                                           'twitterstruth\\ml_models\\fake_followers.sav'),
-                                                              'rb'))
+                                                                           'twitterstruth/ml_models/fake_followers.sav')
+                                                              , 'rb'))
                             if fake_followers.predict(instance) == 0:
                                 result = 'Real'
                             else:
