@@ -44,10 +44,9 @@ body {
     box-sizing: border-box;
     border: 1px solid black;
     border-radius: 5px;
-    background: white;
     padding-left: 0.5%;
     padding-right: 0.5%;
-    background: #DAFFD7;
+    background: #EEFFEC;
     text-align: center;
     overflow-y: auto;
     overflow-x: auto;

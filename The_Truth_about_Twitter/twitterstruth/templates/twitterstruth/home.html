@@ -8,9 +8,9 @@
         <div id="back-result">
         </div>
         <div id="result">
-            <div style="font-size: 150%; padding-top: 4%;">The result for <i>{{ username }}</i> is:<br>
-            <b style="font-size: 200%; font-family: ananda, cursive;">{{ result }}</b></div>
-            <div style="font-size: 150%;">
+            <div style="font-size: 2vw; padding-top: 4%;">The result for <i>{{ username }}</i> is:<br>
+            <b style="font-size: 3vw; font-family: ananda, cursive;">{{ result }}</b></div>
+            <div style="font-size: 1.8vw;">
                 {% if result == 'Real (Verified)' %}
                     Verified by Twitter<br>
                     to be who they say they are
@@ -29,7 +29,7 @@
                     other accounts follower count
                 {% endif %}
             </div>
-            <h4 style="color: red">DISCLAIMER: Predictions are not 100% accurate</h4>
+            <h4 style="color: red; font-size: 1.1vw">DISCLAIMER: Predictions are not 100% accurate</h4>
             <form method="get">
                 <input id="back" type="submit" value="Go Back"/>
             </form>
