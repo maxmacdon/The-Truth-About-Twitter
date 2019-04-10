@@ -33,14 +33,16 @@
             <form method="get">
                 <input id="back" type="submit" value="Go Back"/>
             </form>
-            <a id="feedback" href="https://docs.google.com/forms/d/e/1FAIpQLSfR_QpPpCCGZZN7oAQVX_7SvDw7x1kIq9ezrpyuCLRrTQIklQ/viewform" target="_blank">Feedback</a>
+            <a id="feedback" href="https://docs.google.com/forms/d/e/1FAIpQLSfR_QpPpCCGZZN7oAQVX_7SvDw7x1kIq9ezrpyu
+            CLRrTQIklQ/viewform" target="_blank">Feedback</a>
             {% if result != 'No user found' %}
                 <!-- Source: https://publish.twitter.com/?buttonType=TweetButton&widget=Button
                 Date Accessed: March 2019 -->
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 <div style="position: absolute; top: 85%; left: 52%;">
                     <a class="twitter-share-button" href="https://twitter.com/intent/tweet" data-size="large"
-                      data-text="I found out Twitter user {{ username }} is a {{ result }} account, Disclaimer: results not 100% accurate!"
+                      data-text="I found out Twitter user {{ username }} is a {{ result }} account, Disclaimer:
+                      results not 100% accurate!"
                       data-url="http://ttat-env.tmmyjzitps.us-west-2.elasticbeanstalk.com/"
                       data-hashtags="truth, bots" data-related="twitterapi,twitter">
                         Tweet
@@ -49,10 +51,13 @@
                 <!-- End Code Used -->
                 <!-- Source: https://developers.facebook.com/docs/plugins/share-button/
                 Date Accessed: March 2019 -->
-                <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2"></script>
-                <div class="fb-share-button" data-href="http://ttat-env.tmmyjzitps.us-west-2.elasticbeanstalk.com/" data-layout="button" data-size="large"
+                <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js
+                #xfbml=1&version=v3.2"></script>
+                <div class="fb-share-button" data-href="http://ttat-env.tmmyjzitps.us-west-2.elasticbeanstalk.com/"
+                     data-layout="button" data-size="large"
                     style="position: absolute; top: 85%; left: 72%;">
-                    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8000%2Ftwitterstruth%2Fhome.html&amp;src=sdkpreparse"
+                    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%
+                    3A8000%2Ftwitterstruth%2Fhome.html&amp;src=sdkpreparse"
                        class="fb-xfbml-parse-ignore">Share</a>
                 </div>
                 <!-- End Code Used -->

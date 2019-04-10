@@ -133,7 +133,7 @@ def train_models(acc, filepath):
         # Initialise classifiers and k-fold cross validation
         clf = DecisionTreeClassifier()
         kf = KFold(n_splits=10, shuffle=True)
-        best_hm = 0
+        best_hm, best_train, best_targets = 0, [], []
 
         # Train classifier using K fold cross validation and save the best performing classifier
         for train, test in kf.split(features):

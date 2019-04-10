@@ -14,7 +14,8 @@ while menu_check:
     selection = input('Select an option:')
 
     if selection == '1':
-        print('This will take a long time to process and once started wipes all accounts from database!')
+        print('This will take a long time to process and once '
+              'started wipes all accounts from database!')
         check = input('Are you sure? (yes to proceed, anything else to go back)')
         if check == 'yes':
             os.system(python_path + ' read_store.py')

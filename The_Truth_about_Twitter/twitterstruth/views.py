@@ -163,12 +163,14 @@ def home(request):
                     if social_spam.predict(instance) == 0:
                         traditional_spam = DecisionTreeClassifier()
                         trad_x_train, trad_y_train = load_json(os.path.join(settings.BASE_DIR,
-                                                                    'twitterstruth/ml_models/traditional_spam.json'))
+                                                                            'twitterstruth/ml_models/'
+                                                                            'traditional_spam.json'))
                         traditional_spam.fit(trad_x_train, trad_y_train)
                         if traditional_spam.predict(instance) == 0:
                             fake_followers = DecisionTreeClassifier()
                             ff_x_train, ff_y_train = load_json(os.path.join(settings.BASE_DIR,
-                                                                    'twitterstruth/ml_models/fake_followers.json'))
+                                                                            'twitterstruth/ml_models/'
+                                                                            'fake_followers.json'))
                             fake_followers.fit(ff_x_train, ff_y_train)
                             if fake_followers.predict(instance) == 0:
                                 result = 'Real'

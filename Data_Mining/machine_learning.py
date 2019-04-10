@@ -160,7 +160,6 @@ def train_models(df, type, exp, acc):
         # Initialise classifiers and stratified and normal k-fold cross validation
         classifiers = [
             DecisionTreeClassifier(),
-            RandomForestClassifier(criterion='entropy', n_estimators=100),
             BernoulliNB(),
             KNeighborsClassifier(n_neighbors=10, algorithm='auto'),
             LinearSVC(dual=False)]
@@ -216,7 +215,6 @@ def train_models(df, type, exp, acc):
     finally:
         if conn is not None:
             conn.close()
-
     return df
 
 
@@ -224,7 +222,8 @@ def train_models(df, type, exp, acc):
 d_binary = {'name': ['dt', 'nbb', 'knn', 'svm'],
             'type': ['', '', '', ''],
             'exp': ['', '', '', ''],
-            'cm_00': [0, 0, 0, 0], 'cm_01': [0, 0, 0, 0], 'cm_10': [0, 0, 0, 0], 'cm_11': [0, 0, 0, 0],
+            'cm_00': [0, 0, 0, 0], 'cm_01': [0, 0, 0, 0],
+            'cm_10': [0, 0, 0, 0], 'cm_11': [0, 0, 0, 0],
             'recall': [0, 0, 0, 0],
             'precision': [0, 0, 0, 0],
             'f1': [0, 0, 0, 0],
@@ -243,14 +242,14 @@ d_multi = {'name': ['dt', 'nbb', 'knn', 'svm'],
            'harmonic_mean': [0, 0, 0, 0]}
 
 final_df = pd.DataFrame()
-final_df = final_df.append(train_models(pd.DataFrame(data=d_multi), 'r v ff v t v s', 'param_5', 1), sort=False)
-final_df = final_df.append(train_models(pd.DataFrame(data=d_binary), 'r v f', 'param_5', 0), sort=False)
-final_df = final_df.append(train_models(pd.DataFrame(data=d_binary), 'r v ff', 'param_5', 2), sort=False)
-final_df = final_df.append(train_models(pd.DataFrame(data=d_binary), 'r v s', 'param_5', 4), sort=False)
-final_df = final_df.append(train_models(pd.DataFrame(data=d_binary), 'r v t', 'param_5', 3), sort=False)
+final_df = final_df.append(train_models(pd.DataFrame(data=d_multi), 'r v ff v t v s', 'resamp_4', 1), sort=False)
+final_df = final_df.append(train_models(pd.DataFrame(data=d_binary), 'r v f', 'resamp_4', 0), sort=False)
+final_df = final_df.append(train_models(pd.DataFrame(data=d_binary), 'r v ff', 'resamp_4', 2), sort=False)
+final_df = final_df.append(train_models(pd.DataFrame(data=d_binary), 'r v s', 'resamp_4', 4), sort=False)
+final_df = final_df.append(train_models(pd.DataFrame(data=d_binary), 'r v t', 'resamp_4', 3), sort=False)
 
 with pd.option_context('display.max_rows', None, 'display.max_columns', None):
     print(final_df)
 
-results_file = 'results/exp5_binary_multi_sep_parameters.csv'
+results_file = 'results/exp4_binary_multi_sep_resampling.csv'
 final_df.to_csv(results_file, header=True)
