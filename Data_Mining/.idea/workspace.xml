@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbb455cd-33d3-4bbe-ab95-7511ef27d70b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_save_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_save_models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_mining_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_mining_menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/machine_learning.py" beforeDir="false" afterPath="$PROJECT_DIR$/machine_learning.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/exp5_binary_multi_sep_parameters.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Project Documents/Dissertation_MaxMacDonald_C157406661.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../Project Documents/Dissertation_MaxMacDonald_C157406661.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Project Documents/draft.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../The_Truth_about_Twitter/.idea/dictionaries/Max.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../The_Truth_about_Twitter/.idea/dictionaries/Max.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../The_Truth_about_Twitter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../The_Truth_about_Twitter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../The_Truth_about_Twitter/The_Truth_about_Twitter/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../The_Truth_about_Twitter/The_Truth_about_Twitter/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../The_Truth_about_Twitter/twitterstruth/templates/twitterstruth/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/../The_Truth_about_Twitter/twitterstruth/templates/twitterstruth/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../The_Truth_about_Twitter/twitterstruth/templates/twitterstruth/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/../The_Truth_about_Twitter/twitterstruth/templates/twitterstruth/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../The_Truth_about_Twitter/twitterstruth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../The_Truth_about_Twitter/twitterstruth/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,14 +17,15 @@
     <session id="1513280940">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.40" value="1" />
           <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.67" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -59,7 +48,7 @@
         <entry file="file://$PROJECT_DIR$/machine_learning.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="228">
-              <caret line="198" lean-forward="true" selection-start-line="198" selection-end-line="198" />
+              <caret line="198" selection-start-line="198" selection-end-line="198" />
             </state>
           </provider>
         </entry>
@@ -86,7 +75,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -98,6 +87,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -119,7 +109,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -183,10 +172,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18986385" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23600605" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -227,9 +215,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-707">
           <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -247,9 +232,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-10">
           <caret line="131" lean-forward="true" selection-start-line="131" selection-end-line="131" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -263,7 +245,7 @@
     <entry file="file://$PROJECT_DIR$/machine_learning.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
-          <caret line="198" lean-forward="true" selection-start-line="198" selection-end-line="198" />
+          <caret line="198" selection-start-line="198" selection-end-line="198" />
         </state>
       </provider>
     </entry>

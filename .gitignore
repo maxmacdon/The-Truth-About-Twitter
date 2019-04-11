@@ -8,6 +8,9 @@ __pycache__/
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
 
+# Requirements file
+The_Truth_about_Twitter/requirements.txt
+
 # C extensions
 *.so
 

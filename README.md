@@ -11,7 +11,4 @@ A simple web app makes use of these models, allowing a user to check any Twitter
 account they wish and share results to Facebook & Twitter
 
 Deployed Via AWS ( Datasets, documents and data mining directory all removed
-from code base before deployment )
-
-
-
+from code base before deployment ) at : http://ttat-env.tmmyjzitps.us-west-2.elasticbeanstalk.com/?
