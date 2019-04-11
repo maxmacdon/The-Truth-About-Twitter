@@ -3,6 +3,8 @@ Computer Science Final Year Project
 
 Data mining and machine learning algorithms used to create models that can
 accurately predict whether a Twitter account is real or not.
+This is ran via IDE or command line by running data_mining_menu.py
+within the virtual environment.
 
 Datasets used are too large to upload and as such can be found at their source:
 https://botometer.iuni.iu.edu/bot-repository/datasets.html
