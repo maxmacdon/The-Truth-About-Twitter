@@ -3,7 +3,7 @@ PySocks==1.6.8
 certifi==2018.10.15
 chardet==3.0.4
 idna==2.7
-numpy==1.16.2
+numpy==1.22.0
 oauthlib==2.1.0
 pip==10.0.1
 python-dateutil==2.7.5
